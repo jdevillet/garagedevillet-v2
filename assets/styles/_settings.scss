@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "rubik";
+  src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+
+$font1: "rubik", Verdana;
+$black1: rgb(23, 20, 21);
+$black2: rgb(47, 47, 47);
+$white1: rgb(241, 241, 241);
+$white2: rgb(230, 230, 230);
+$color1: rgb(255, 27, 39);
+$color2: rgba(253, 99, 106, 0.858);
+$color3: rgb(0, 0, 0);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/*******************************/
