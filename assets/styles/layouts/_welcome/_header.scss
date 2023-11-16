@@ -1,0 +1,34 @@
+header {
+  min-height: 100vh;
+
+  nav {
+    display: flex;
+    width: 100%;
+    background: $black2;
+    box-shadow: 0 0 3px #333;
+    height: 5rem;
+    transition: 0.2s ease;
+    position: relative;
+
+    .logo-nav {
+      background: url(/assets/img/logo2.png) center/cover;
+      min-width: 15rem;
+      height: 100%;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      height: 100%;
+      margin: auto 1rem;
+
+      li {
+        .nav-element {
+          color: $white1;
+        }
+      }
+    }
+  }
+}

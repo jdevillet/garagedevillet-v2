@@ -8,14 +8,17 @@ $black1: rgb(23, 20, 21);
 $black2: rgb(47, 47, 47);
 $white1: rgb(241, 241, 241);
 $white2: rgb(230, 230, 230);
-$color1: rgb(255, 27, 39);
-$color2: rgba(253, 99, 106, 0.858);
-$color3: rgb(0, 0, 0);
+$redTheme: rgb(255, 27, 39);
+$lighterRed: rgba(253, 99, 106, 0.858);
 
 *,
 *::before,
-*::after {
+*::after,
+*:visited {
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: $black1;
 }
 * {
   margin: 0;
@@ -52,3 +55,37 @@ h6 {
   isolation: isolate;
 }
 /*******************************/
+
+.bold {
+  font-weight: 900;
+}
+
+.centered {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.icon {
+  color: $black1;
+  font-size: 1.4rem;
+}
+
+.moreBtn {
+  background: $black1;
+  color: $white1;
+  padding: .5rem 1.2rem;
+  border-radius: 99rem;
+  transition: .2s;
+
+  &:hover{
+    padding: .6rem 1.4rem;
+    color: $black1;
+    background: $white1;
+    font-size: 1.1rem;
+  }
+}
+
+

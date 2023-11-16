@@ -4,8 +4,12 @@
 }
 *,
 *::before,
-*::after {
+*::after,
+*:visited {
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(23, 20, 21);
 }
 
 * {
@@ -48,4 +52,63 @@ h6 {
   isolation: isolate;
 }
 
-/*******************************//*# sourceMappingURL=index.css.map */
+/*******************************/
+.bold {
+  font-weight: 900;
+}
+
+.centered {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.icon {
+  color: rgb(23, 20, 21);
+  font-size: 1.4rem;
+}
+
+.moreBtn {
+  background: rgb(23, 20, 21);
+  color: rgb(241, 241, 241);
+  padding: 0.5rem 1.2rem;
+  border-radius: 99rem;
+  transition: 0.2s;
+}
+.moreBtn:hover {
+  padding: 0.6rem 1.4rem;
+  color: rgb(23, 20, 21);
+  background: rgb(241, 241, 241);
+  font-size: 1.1rem;
+}
+
+header {
+  min-height: 100vh;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  background: rgb(47, 47, 47);
+  box-shadow: 0 0 3px #333;
+  height: 5rem;
+  transition: 0.2s ease;
+  position: relative;
+}
+header nav .logo-nav {
+  background: url(/assets/img/logo2.png) center/cover;
+  min-width: 15rem;
+  height: 100%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin: auto 1rem;
+}
+header nav ul li .nav-element {
+  color: rgb(241, 241, 241);
+}/*# sourceMappingURL=index.css.map */
