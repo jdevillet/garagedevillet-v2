@@ -20,7 +20,8 @@ $lighterRed: rgba(253, 99, 106, 0.858);
   list-style: none;
   color: $black1;
   margin: 0;
-font-family: "rubik";
+  font-family: "rubik";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -76,16 +77,14 @@ h6 {
 .moreBtn {
   background: $black1;
   color: $white1;
-  padding: .5rem 1.2rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 99rem;
-  transition: .2s;
+  transition: 0.2s;
 
-  &:hover{
-    padding: .6rem 1.4rem;
+  &:hover {
+    padding: 0.6rem 1.4rem;
     color: $black1;
     background: $white1;
     font-size: 1.1rem;
   }
 }
-
-

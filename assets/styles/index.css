@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "rubik";
   src: url(../fonts/Rubik-VariableFont_wght.ttf);
@@ -12,6 +13,7 @@
   color: rgb(23, 20, 21);
   margin: 0;
   font-family: "rubik";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -84,6 +86,8 @@ h6 {
 
 header {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 header nav {
   display: grid;
@@ -91,9 +95,10 @@ header nav {
   width: 100%;
   background: rgb(47, 47, 47);
   box-shadow: 0 0 3px #333;
-  height: 5rem;
+  min-height: 5rem;
   transition: 0.2s ease;
-  position: relative;
+  position: fixed;
+  z-index: 999;
 }
 header nav .logo-nav {
   background: url(/assets/img/logo2.png) center/cover;
@@ -138,4 +143,55 @@ header nav ul li:not(:last-of-type):hover:after {
   visibility: visible;
   transform: scaleX(1);
   transform-origin: bottom right;
+}
+header .first-sight {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(/assets/img/augu-mecha.webp) center/cover;
+}
+header .first-sight h1 {
+  color: rgb(241, 241, 241);
+  font-size: 3.3rem;
+}
+header .first-sight p {
+  color: rgb(241, 241, 241);
+  font-size: 2.3rem;
+  margin: 1rem 0 3rem;
+}
+header .first-sight .main-button {
+  border-radius: 4px;
+  background-color: rgb(255, 27, 39);
+  letter-spacing: 0.5px;
+  border: none;
+  color: rgb(241, 241, 241);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem 0 1rem 0;
+  width: 20rem;
+  margin: 3rem 0 0 0;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+header .first-sight .main-button:after {
+  content: "⇊";
+  position: absolute;
+  color: rgb(241, 241, 241);
+  opacity: 0;
+  top: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease-out;
+  font-size: 1.6rem;
+}
+header .first-sight .main-button:hover {
+  padding: 0 0 1.4rem 0;
+}
+header .first-sight .main-button:hover:after {
+  opacity: 1;
+  top: 1.2rem;
 }/*# sourceMappingURL=index.css.map */

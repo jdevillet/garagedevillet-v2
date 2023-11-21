@@ -1,15 +1,19 @@
 header {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   nav {
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     background: $black2;
     box-shadow: 0 0 3px #333;
-    height: 5rem;
+    min-height: 5rem;
     transition: 0.2s ease;
-    position: relative;
+   position: fixed;
+   z-index: 999;
 
     .logo-nav {
       background: url(/assets/img/logo2.png) center/cover;
@@ -52,10 +56,71 @@ header {
         }
 
         &:not(:last-of-type):hover:after {
-        visibility: visible;
-        transform: scaleX(1);
-        transform-origin: bottom right;
+          visibility: visible;
+          transform: scaleX(1);
+          transform-origin: bottom right;
         }
+      }
+    }
+  }
+
+  .first-sight {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/img/augu-mecha.webp) center/cover;
+    
+    
+    h1 {
+      color: $white1;
+  
+      font-size: 3.3rem;
+    }
+    p {
+      color: $white1;
+      font-size: 2.3rem;
+      margin: 1rem 0 3rem;
+    }
+    
+    .main-button {
+      border-radius: 4px;
+      background-color: $redTheme;
+      letter-spacing: .5px;
+      border: none;
+      color: $white1;
+      text-align: center;
+      font-size: 1.2rem;
+      padding:1rem 0 1rem 0;
+      width: 20rem;
+      margin: 3rem 0 0 0;
+      box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+      display: inline-block;
+      position: relative;
+      transition: 0.3s;
+
+
+      &:after {
+        content: "⇊";
+        position: absolute;
+        color: $white1;
+        opacity: 0;
+        top: 1.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.3s ease-out;
+        font-size: 1.6rem;
+      }
+
+      &:hover {
+        padding:0 0 1.4rem 0;
+
+      }
+
+      &:hover:after {
+        opacity: 1;
+        top: 1.2rem;
       }
     }
   }
