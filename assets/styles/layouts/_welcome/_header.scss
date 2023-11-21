@@ -2,7 +2,8 @@ header {
   min-height: 100vh;
 
   nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     background: $black2;
     box-shadow: 0 0 3px #333;
@@ -12,21 +13,48 @@ header {
 
     .logo-nav {
       background: url(/assets/img/logo2.png) center/cover;
-      min-width: 15rem;
-      height: 100%;
+      min-height: 100%;
+      min-width: 16rem;
+      max-width: 16rem;
     }
 
     ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       width: 90%;
+      min-width: 20rem;
+      max-width: 35rem;
       height: 100%;
       margin: auto 1rem;
 
       li {
+        position: relative;
+        transition: 0.3s ease-out;
         .nav-element {
           color: $white1;
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+          color: $white1;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          height: 3px;
+          width: 100%;
+          background: $redTheme;
+          top: 1.5rem;
+          left: 0;
+          transform: scaleX(0);
+          transform-origin: bottom right;
+          transition: 0.25s ease-out;
+          visibility: hidden;
+        }
+
+        &:not(:last-of-type):hover:after {
+        visibility: visible;
+        transform: scaleX(1);
+        transform-origin: bottom right;
         }
       }
     }
