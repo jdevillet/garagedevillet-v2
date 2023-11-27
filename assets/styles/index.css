@@ -100,6 +100,11 @@ header nav {
   position: fixed;
   z-index: 999;
 }
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
 header nav .logo-nav {
   background: url(/assets/img/logo2.png) center/cover;
   min-height: 100%;
@@ -152,9 +157,27 @@ header .first-sight {
   align-items: center;
   background: url(/assets/img/augu-mecha.webp) center/cover;
 }
+@media screen and (max-width: 768px) {
+  header .first-sight {
+    background: rgb(47, 47, 47);
+  }
+}
+@media screen and (max-width: 768px) {
+  header .first-sight .bg-phone {
+    background: url(/assets/img/logo2.png) center/cover;
+    width: 80%;
+    height: 12rem;
+    margin-bottom: 4.5rem;
+  }
+}
 header .first-sight h1 {
   color: rgb(241, 241, 241);
   font-size: 3.3rem;
+}
+@media screen and (max-width: 768px) {
+  header .first-sight h1 {
+    font-size: 2.5rem;
+  }
 }
 header .first-sight p {
   color: rgb(241, 241, 241);
@@ -178,20 +201,19 @@ header .first-sight .main-button {
   transition: 0.3s;
 }
 header .first-sight .main-button:after {
-  content: "⇊";
+  content: "↴";
   position: absolute;
+  font-size: 2.5rem;
   color: rgb(241, 241, 241);
   opacity: 0;
-  top: 1.2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  top: -0.1rem;
+  left: 85%;
   transition: 0.3s ease-out;
-  font-size: 1.6rem;
 }
 header .first-sight .main-button:hover {
-  padding: 0 0 1.4rem 0;
+  text-indent: -1.6rem;
 }
 header .first-sight .main-button:hover:after {
   opacity: 1;
-  top: 1.2rem;
+  text-indent: 0.5rem;
 }/*# sourceMappingURL=index.css.map */

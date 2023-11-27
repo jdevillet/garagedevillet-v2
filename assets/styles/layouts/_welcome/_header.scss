@@ -4,7 +4,6 @@ header {
   flex-direction: column;
 
   nav {
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -12,8 +11,12 @@ header {
     box-shadow: 0 0 3px #333;
     min-height: 5rem;
     transition: 0.2s ease;
-   position: fixed;
-   z-index: 999;
+    position: fixed;
+    z-index: 999;
+
+    @media screen and (max-width:768px) {
+      display: none;
+    }
 
     .logo-nav {
       background: url(/assets/img/logo2.png) center/cover;
@@ -65,34 +68,50 @@ header {
   }
 
   .first-sight {
-    height:100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url(/assets/img/augu-mecha.webp) center/cover;
-    
-    
+
+    @media screen and (max-width:768px) {
+      background: $black2;
+      
+    }
+
+    .bg-phone{
+      @media screen and (max-width:768px) {
+        background: url(/assets/img/logo2.png) center/cover;
+        width: 80%;
+        height: 12rem;
+        margin-bottom: 4.5rem;
+      }
+      }
+      
     h1 {
       color: $white1;
-  
+
       font-size: 3.3rem;
+      @media screen and (max-width:768px) {
+        font-size: 2.5rem;
+      }
     }
     p {
       color: $white1;
       font-size: 2.3rem;
       margin: 1rem 0 3rem;
     }
-    
+
     .main-button {
       border-radius: 4px;
       background-color: $redTheme;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
       border: none;
       color: $white1;
       text-align: center;
       font-size: 1.2rem;
-      padding:1rem 0 1rem 0;
+      padding: 1rem 0 1rem 0;
       width: 20rem;
       margin: 3rem 0 0 0;
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
@@ -100,27 +119,25 @@ header {
       position: relative;
       transition: 0.3s;
 
-
       &:after {
-        content: "⇊";
+        content: "↴";
         position: absolute;
+        font-size: 2.5rem;
         color: $white1;
         opacity: 0;
-        top: 1.2rem;
-        left: 50%;
-        transform: translateX(-50%);
+        top: -0.1rem;
+        left: 85%;
         transition: 0.3s ease-out;
-        font-size: 1.6rem;
+        
       }
 
       &:hover {
-        padding:0 0 1.4rem 0;
-
+        text-indent: -1.6rem;
       }
 
       &:hover:after {
         opacity: 1;
-        top: 1.2rem;
+        text-indent: 0.5rem;
       }
     }
   }
