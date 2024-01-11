@@ -18,10 +18,10 @@ $lighterRed: rgba(253, 99, 106, 0.858);
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  color: $black1;
+  color: $white1;
   margin: 0;
-  font-family: "rubik";
   scroll-behavior: smooth;
+
 }
 
 body {
@@ -40,7 +40,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  font-family: $font1;
 }
 p,
 h1,
@@ -48,8 +48,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  overflow-wrap: break-word;
+h6,
+li,
+a {
+  text-wrap: pretty;
+  font-family: $font1;
 }
 #root,
 #__next {
@@ -88,3 +91,7 @@ h6 {
     font-size: 1.1rem;
   }
 }
+
+
+
+
