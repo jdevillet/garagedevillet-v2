@@ -1,5 +1,3 @@
-
-
 window.addEventListener("scroll", (e) => {
   if (window.scrollY > 50) {
     navbar.style.height = "3rem";
