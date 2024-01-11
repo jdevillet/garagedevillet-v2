@@ -203,9 +203,9 @@ header .first-sight .text p {
   font-size: 2rem;
   margin: 1rem 0 3rem;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 580px) {
   header .first-sight .text p {
-    margin: 1rem 1.5rem;
+    margin: 1rem 2rem;
     max-width: 15ch;
   }
 }
