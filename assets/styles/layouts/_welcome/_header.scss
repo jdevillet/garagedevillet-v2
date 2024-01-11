@@ -14,6 +14,7 @@ header {
     position: fixed;
     z-index: 999;
 
+
     @media screen and (max-width: 768px) {
       display: none;
     }
@@ -76,6 +77,9 @@ header {
       background: $black2;
       padding: 0;
     }
+    @media screen and (max-height: 400px) {
+      padding: 0;
+    }
 
     .bg-phone {
       @media screen and (max-width: 768px) {
@@ -95,12 +99,15 @@ header {
       border-radius: 1rem;
       background: url(/assets/img/logo2.png) center/cover;
 
-      @media screen and (max-width: 768px), screen and (max-height: 700px) {
+      @media screen and (max-width: 768px), screen and (max-height: 840px) {
         display: none;
       }
     }
     .text {
       margin: 5rem 0 3rem ;
+     @media screen and (max-height: 840px){
+margin: 0;
+      }
 
       h1 {
         color: $white1;
@@ -119,6 +126,9 @@ header {
           margin: 1rem 2rem;
           max-width: 15ch;
         }
+        @media screen and (max-height: 840px){
+          margin: 0 0 1rem;
+                }
       }
     }
 
@@ -137,6 +147,9 @@ header {
       display: inline-block;
       position: relative;
       transition: 0.3s;
+      @media screen and (max-height: 840px){
+        margin: 0;
+              }
 
       &:after {
         content: "↴";

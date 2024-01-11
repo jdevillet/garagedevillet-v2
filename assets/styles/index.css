@@ -162,6 +162,11 @@ header .first-sight {
     padding: 0;
   }
 }
+@media screen and (max-height: 400px) {
+  header .first-sight {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   header .first-sight .bg-phone {
     background: url(/assets/img/logo2.png) center/cover;
@@ -179,13 +184,18 @@ header .first-sight #logo {
   border-radius: 1rem;
   background: url(/assets/img/logo2.png) center/cover;
 }
-@media screen and (max-width: 768px), screen and (max-height: 700px) {
+@media screen and (max-width: 768px), screen and (max-height: 840px) {
   header .first-sight #logo {
     display: none;
   }
 }
 header .first-sight .text {
   margin: 5rem 0 3rem;
+}
+@media screen and (max-height: 840px) {
+  header .first-sight .text {
+    margin: 0;
+  }
 }
 header .first-sight .text h1 {
   color: rgb(241, 241, 241);
@@ -209,6 +219,11 @@ header .first-sight .text p {
     max-width: 15ch;
   }
 }
+@media screen and (max-height: 840px) {
+  header .first-sight .text p {
+    margin: 0 0 1rem;
+  }
+}
 header .first-sight .main-button {
   border-radius: 4px;
   background-color: rgb(255, 27, 39);
@@ -224,6 +239,11 @@ header .first-sight .main-button {
   display: inline-block;
   position: relative;
   transition: 0.3s;
+}
+@media screen and (max-height: 840px) {
+  header .first-sight .main-button {
+    margin: 0;
+  }
 }
 header .first-sight .main-button:after {
   content: "↴";
