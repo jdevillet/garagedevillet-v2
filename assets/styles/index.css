@@ -152,20 +152,23 @@ header .first-sight {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-items: center;
   background: url(/assets/img/augu-mecha.webp) center/cover;
   padding: 5rem 0 0 0;
 }
 @media screen and (max-width: 768px) {
   header .first-sight {
     background: rgb(47, 47, 47);
-    padding: 0 0 8rem 0;
+    padding: 0;
   }
 }
 @media screen and (max-width: 768px) {
   header .first-sight .bg-phone {
     background: url(/assets/img/logo2.png) center/cover;
     width: 100%;
-    height: 14rem;
+    max-width: 25rem;
+    height: 8rem;
+    min-height: 8rem;
   }
 }
 header .first-sight #logo {
@@ -181,21 +184,30 @@ header .first-sight #logo {
     display: none;
   }
 }
-header .first-sight h1 {
+header .first-sight .text {
+  margin: 5rem 0 3rem;
+}
+header .first-sight .text h1 {
   color: rgb(241, 241, 241);
   margin: 0 1rem;
   font-size: 3.3rem;
 }
 @media screen and (max-width: 768px) {
-  header .first-sight h1 {
+  header .first-sight .text h1 {
     font-size: 2.5rem;
     margin: 1rem 0.5rem 0 0;
   }
 }
-header .first-sight p {
+header .first-sight .text p {
   color: rgb(241, 241, 241);
   font-size: 2rem;
   margin: 1rem 0 3rem;
+}
+@media screen and (max-width: 550px) {
+  header .first-sight .text p {
+    margin: 1rem 1.5rem;
+    max-width: 15ch;
+  }
 }
 header .first-sight .main-button {
   border-radius: 4px;
