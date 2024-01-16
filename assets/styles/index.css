@@ -150,11 +150,11 @@ header .section1 {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   justify-items: center;
-  background: url(/assets/img/augu-mecha.webp) center/cover;
-  padding: 5rem 0 0 0;
+  background: rgb(47, 47, 47);
+  padding: 5rem 0 5rem 0;
 }
 @media screen and (max-width: 768px) {
   header .section1 {
@@ -167,63 +167,57 @@ header .section1 {
     padding: 0;
   }
 }
-@media screen and (max-width: 768px) {
-  header .section1 .responsive-phone {
-    background: url(/assets/img/logogarage.webp) center/cover;
-    width: 100%;
-    max-width: 25rem;
-    height: 9rem;
-    min-height: 9rem;
-    border-radius: 0.5rem;
-  }
-}
 header .section1 #logo {
-  min-width: 20rem;
   width: 40rem;
   min-height: 5rem;
   height: 15rem;
   border-radius: 1rem;
-  background: url(/assets/img/logo2.png) center/cover;
+  background: url(/assets/img/logogarage.webp) center/cover;
 }
-@media screen and (max-width: 768px), screen and (max-height: 840px) {
+@media screen and (max-width: 768px) {
   header .section1 #logo {
-    display: none;
+    width: 100%;
+    max-width: 30rem;
+    height: 12rem;
+    min-height: 9rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  header .section1 #logo {
+    max-width: 20rem;
+    min-height: 7rem;
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  header .section1 #logo {
+    max-width: 18rem;
+    min-height: 5rem;
+    height: 7rem;
   }
 }
 header .section1 .text {
-  margin: 5rem 0 3rem;
-}
-@media screen and (max-height: 840px) {
-  header .section1 .text {
-    margin: 0;
-  }
-}
-header .section1 .text h1 {
-  color: rgb(241, 241, 241);
-  margin: 0 1rem;
-  font-size: 3.3rem;
-}
-@media screen and (max-width: 768px) {
-  header .section1 .text h1 {
-    font-size: 2.5rem;
-    margin: 1rem 0.5rem 0 0;
-  }
+  height: 8rem;
+  display: flex;
+  align-items: center;
 }
 header .section1 .text p {
   color: rgb(241, 241, 241);
   font-size: 2rem;
-  margin: 1rem 0 3rem;
+  margin: 0 3rem;
 }
 @media screen and (max-width: 580px) {
   header .section1 .text p {
-    margin: 1rem 2rem;
+    margin: 0 2rem;
     max-width: 15ch;
   }
 }
-@media screen and (max-height: 840px) {
-  header .section1 .text p {
-    margin: 0 0 1rem;
-  }
+header .section1 .welcome-image {
+  max-width: 50rem;
+  width: 50%;
+  min-width: 20rem;
 }
 header .section1 .main-button {
   border-radius: 4px;
@@ -235,7 +229,6 @@ header .section1 .main-button {
   font-size: 1.2rem;
   padding: 1rem 0 1rem 0;
   width: 20rem;
-  margin: 3rem 0 0 0;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
   display: inline-block;
   position: relative;
@@ -244,6 +237,11 @@ header .section1 .main-button {
 @media screen and (max-height: 840px) {
   header .section1 .main-button {
     margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .section1 .main-button {
+    margin-top: 2rem;
   }
 }
 header .section1 .main-button:after {
@@ -262,4 +260,25 @@ header .section1 .main-button:hover {
 header .section1 .main-button:hover:after {
   opacity: 1;
   text-indent: 0.5rem;
+}
+header .section1 #scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.5rem;
+  color: rgb(241, 241, 241);
+  padding: 0.5rem;
+  border-radius: 99rem;
+  transition: 180ms ease-in-out;
+  transform: translateX(-50%);
+  left: 50%;
+}
+header .section1 #scroll-down:hover {
+  cursor: pointer;
+  background: red;
+  color: rgb(47, 47, 47);
+}
+@media screen and (max-width: 768px) {
+  header .section1 #scroll-down {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
