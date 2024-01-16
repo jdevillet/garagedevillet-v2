@@ -63,7 +63,7 @@ header {
     }
   }
 
-  .first-sight {
+  .section1 {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -81,13 +81,14 @@ header {
       padding: 0;
     }
 
-    .bg-phone {
+    .responsive-phone {
       @media screen and (max-width: 768px) {
-        background: url(/assets/img/logo2.png) center/cover;
+        background: url(/assets/img/logogarage.webp) center/cover;
         width: 100%;
         max-width: 25rem;
-        height: 8rem;
-        min-height: 8rem;
+        height: 9rem;
+        min-height: 9rem;
+        border-radius: .5rem;
       }
     }
 

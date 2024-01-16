@@ -146,7 +146,7 @@ header #navbar ul li #facebook-btn {
   color: black;
   background-color: red;
 }
-header .first-sight {
+header .section1 {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -157,26 +157,27 @@ header .first-sight {
   padding: 5rem 0 0 0;
 }
 @media screen and (max-width: 768px) {
-  header .first-sight {
+  header .section1 {
     background: rgb(47, 47, 47);
     padding: 0;
   }
 }
 @media screen and (max-height: 400px) {
-  header .first-sight {
+  header .section1 {
     padding: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  header .first-sight .bg-phone {
-    background: url(/assets/img/logo2.png) center/cover;
+  header .section1 .responsive-phone {
+    background: url(/assets/img/logogarage.webp) center/cover;
     width: 100%;
     max-width: 25rem;
-    height: 8rem;
-    min-height: 8rem;
+    height: 9rem;
+    min-height: 9rem;
+    border-radius: 0.5rem;
   }
 }
-header .first-sight #logo {
+header .section1 #logo {
   min-width: 20rem;
   width: 40rem;
   min-height: 5rem;
@@ -185,46 +186,46 @@ header .first-sight #logo {
   background: url(/assets/img/logo2.png) center/cover;
 }
 @media screen and (max-width: 768px), screen and (max-height: 840px) {
-  header .first-sight #logo {
+  header .section1 #logo {
     display: none;
   }
 }
-header .first-sight .text {
+header .section1 .text {
   margin: 5rem 0 3rem;
 }
 @media screen and (max-height: 840px) {
-  header .first-sight .text {
+  header .section1 .text {
     margin: 0;
   }
 }
-header .first-sight .text h1 {
+header .section1 .text h1 {
   color: rgb(241, 241, 241);
   margin: 0 1rem;
   font-size: 3.3rem;
 }
 @media screen and (max-width: 768px) {
-  header .first-sight .text h1 {
+  header .section1 .text h1 {
     font-size: 2.5rem;
     margin: 1rem 0.5rem 0 0;
   }
 }
-header .first-sight .text p {
+header .section1 .text p {
   color: rgb(241, 241, 241);
   font-size: 2rem;
   margin: 1rem 0 3rem;
 }
 @media screen and (max-width: 580px) {
-  header .first-sight .text p {
+  header .section1 .text p {
     margin: 1rem 2rem;
     max-width: 15ch;
   }
 }
 @media screen and (max-height: 840px) {
-  header .first-sight .text p {
+  header .section1 .text p {
     margin: 0 0 1rem;
   }
 }
-header .first-sight .main-button {
+header .section1 .main-button {
   border-radius: 4px;
   background-color: rgb(255, 27, 39);
   letter-spacing: 0.5px;
@@ -241,11 +242,11 @@ header .first-sight .main-button {
   transition: 0.3s;
 }
 @media screen and (max-height: 840px) {
-  header .first-sight .main-button {
+  header .section1 .main-button {
     margin: 0;
   }
 }
-header .first-sight .main-button:after {
+header .section1 .main-button:after {
   content: "↴";
   position: absolute;
   font-size: 2.5rem;
@@ -255,10 +256,10 @@ header .first-sight .main-button:after {
   left: 85%;
   transition: 0.3s ease-out;
 }
-header .first-sight .main-button:hover {
+header .section1 .main-button:hover {
   text-indent: -1.6rem;
 }
-header .first-sight .main-button:hover:after {
+header .section1 .main-button:hover:after {
   opacity: 1;
   text-indent: 0.5rem;
 }/*# sourceMappingURL=index.css.map */
