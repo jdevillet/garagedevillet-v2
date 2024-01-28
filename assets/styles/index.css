@@ -1,349 +1,349 @@
-  @charset "UTF-8";
-  @font-face {
-    font-family: "rubik";
-    src: url(../fonts/Rubik-VariableFont_wght.ttf);
-  }
-  *,
-  *::before,
-  *::after,
-  *:visited {
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    color: rgb(241, 241, 241);
-    margin: 0;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
+@charset "UTF-8";
+@font-face {
+  font-family: "rubik";
+  src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+*,
+*::before,
+*::after,
+*:visited {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(241, 241, 241);
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
 
-  img,
-  picture,
-  video,
-  canvas,
-  svg {
-    display: block;
-    max-width: 100%;
-  }
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
 
-  input,
-  button,
-  textarea,
-  select {
-    font-family: "rubik", Verdana;
-  }
+input,
+button,
+textarea,
+select {
+  font-family: "rubik", Verdana;
+}
 
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  li,
-  a {
-    text-wrap: pretty;
-    font-family: "rubik", Verdana;
-  }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+  text-wrap: pretty;
+  font-family: "rubik", Verdana;
+}
 
-  #root,
-  #__next {
-    isolation: isolate;
-  }
+#root,
+#__next {
+  isolation: isolate;
+}
 
-  /*******************************/
-  .bold {
-    font-weight: 900;
-  }
+/*******************************/
+.bold {
+  font-weight: 900;
+}
 
-  .centered {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 0 auto;
-  }
+.centered {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+}
 
-  .icon {
-    color: rgb(23, 20, 21);
-    font-size: 1.4rem;
-  }
+.icon {
+  color: rgb(23, 20, 21);
+  font-size: 1.4rem;
+}
 
-  .moreBtn {
-    background: rgb(23, 20, 21);
-    color: rgb(241, 241, 241);
-    padding: 0.5rem 1.2rem;
-    border-radius: 99rem;
-    transition: 0.2s;
-  }
-  .moreBtn:hover {
-    padding: 0.6rem 1.4rem;
-    color: rgb(23, 20, 21);
-    background: rgb(241, 241, 241);
-    font-size: 1.1rem;
-  }
+.moreBtn {
+  background: rgb(23, 20, 21);
+  color: rgb(241, 241, 241);
+  padding: 0.5rem 1.2rem;
+  border-radius: 99rem;
+  transition: 0.2s;
+}
+.moreBtn:hover {
+  padding: 0.6rem 1.4rem;
+  color: rgb(23, 20, 21);
+  background: rgb(241, 241, 241);
+  font-size: 1.1rem;
+}
 
-  header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header #navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgb(47, 47, 47);
+  height: 5rem;
+  transition: 0.2s ease;
+  position: fixed;
+  z-index: 999;
+}
+@media only screen and (max-height: 925px) {
   header #navbar {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background: rgb(47, 47, 47);
-    height: 5rem;
-    transition: 0.2s ease;
-    position: fixed;
-    z-index: 999;
+    display: none;
   }
-  @media only screen and (max-height: 925px) {
-    header #navbar {
-      display: none;
-    }
+}
+@media screen and (max-width: 768px) {
+  header #navbar {
+    display: none;
   }
-  @media screen and (max-width: 768px) {
-    header #navbar {
-      display: none;
-    }
-  }
-  header #navbar ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    margin: auto 1rem;
-  }
-  header #navbar ul li {
-    position: relative;
-    transition: 0.3s ease-out;
-  }
-  header #navbar ul li .nav-element {
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    color: rgb(241, 241, 241);
-  }
-  header #navbar ul li:after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: rgb(255, 27, 39);
-    top: 1.5rem;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: 0.25s ease-out;
-    visibility: hidden;
-  }
-  header #navbar ul li:not(:last-of-type):hover:after {
-    visibility: visible;
-    transform: scaleX(1);
-    transform-origin: bottom right;
-  }
-  header #navbar ul li #facebook-btn {
-    color: black;
-    background-color: red;
-  }
+}
+header #navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin: auto 1rem;
+}
+header #navbar ul li {
+  position: relative;
+  transition: 0.3s ease-out;
+}
+header #navbar ul li .nav-element {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: rgb(241, 241, 241);
+}
+header #navbar ul li:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: rgb(255, 27, 39);
+  top: 1.5rem;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: 0.25s ease-out;
+  visibility: hidden;
+}
+header #navbar ul li:not(:last-of-type):hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+header #navbar ul li #facebook-btn {
+  color: black;
+  background-color: red;
+}
+header .section1 {
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  background: rgb(47, 47, 47);
+  padding: 5rem 0 5rem 0;
+}
+@media only screen and (max-height: 500px) {
   header .section1 {
-    height: 100vh;
-    max-width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    row-gap: 3rem;
+    grid-template-areas: "a1 a2" "a1 a3";
+    padding: 0 0 0;
+    margin: 0;
+    align-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .section1 {
+    background: rgb(47, 47, 47);
+    padding: 0;
+  }
+}
+@media screen and (max-height: 400px) {
+  header .section1 {
+    padding: 0;
+  }
+}
+header .section1 #logo {
+  width: 40rem;
+  min-height: 5rem;
+  height: 15rem;
+  border-radius: 1rem;
+  background: url(/assets/img/logogarage.webp) center/cover;
+  grid-area: a1;
+}
+@media only screen and (max-height: 925px) {
+  header .section1 #logo {
+    width: 30rem;
+    min-height: 5rem;
+    height: 13rem;
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .section1 #logo {
+    width: 100%;
+    max-width: 30rem;
+    height: 12rem;
+    min-height: 9rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 510px) {
+  header .section1 #logo {
+    max-width: 20rem;
+    min-height: 7rem;
+    height: 9rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  header .section1 #logo {
+    max-width: 18rem;
+    min-height: 5rem;
+    height: 7rem;
+  }
+}
+header .section1 p {
+  color: rgb(241, 241, 241);
+  font-size: 4rem;
+  margin: 0 3rem;
+  min-width: 15ch;
+  max-width: 100%;
+  grid-area: a2;
+}
+@media screen and (max-width: 1200px) {
+  header .section1 p {
+    font-size: 3rem;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  header .section1 p {
+    max-width: 15ch;
+  }
+}
+@media screen and (max-width: 430px) {
+  header .section1 p {
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
+}
+header .section1 .welcome-image {
+  max-width: 39rem;
+  width: 50%;
+  min-width: 20rem;
+}
+@media only screen and (max-height: 925px) {
+  header .section1 .welcome-image {
+    display: none;
+  }
+}
+header .section1 .main-button {
+  border-radius: 4px;
+  background-color: rgb(255, 27, 39);
+  letter-spacing: 0.5px;
+  border: none;
+  color: rgb(241, 241, 241);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem 0 1rem 0;
+  width: 20rem;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+  grid-area: a3;
+}
+@media screen and (max-height: 840px) {
+  header .section1 .main-button {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .section1 .main-button {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  header .section1 .main-button {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-    background: rgb(47, 47, 47);
-    padding: 5rem 0 5rem 0;
-  }
-  @media only screen and (max-height: 500px) {
-    header .section1 {
-      display: grid;
-      grid-template-columns: 55% 45%;
-      row-gap: 3rem;
-      grid-template-areas: "a1 a2" "a1 a3";
-      padding: 0 0 0;
-      margin: 0;
-      align-content: center;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    header .section1 {
-      background: rgb(47, 47, 47);
-      padding: 0;
-    }
-  }
-  @media screen and (max-height: 400px) {
-    header .section1 {
-      padding: 0;
-    }
-  }
-  header .section1 #logo {
-    width: 40rem;
-    min-height: 5rem;
-    height: 15rem;
-    border-radius: 1rem;
-    background: url(/assets/img/logogarage.webp) center/cover;
-    grid-area: a1;
-  }
-  @media only screen and (max-height: 925px) {
-    header .section1 #logo {
-      width: 30rem;
-      min-height: 5rem;
-      height: 13rem;
-      margin: 0 0 0 0;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    header .section1 #logo {
-      width: 100%;
-      max-width: 30rem;
-      height: 12rem;
-      min-height: 9rem;
-      border-radius: 0.5rem;
-      margin-bottom: 2rem;
-    }
-  }
-  @media screen and (max-width: 510px) {
-    header .section1 #logo {
-      max-width: 20rem;
-      min-height: 7rem;
-      height: 9rem;
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 350px) {
-    header .section1 #logo {
-      max-width: 18rem;
-      min-height: 5rem;
-      height: 7rem;
-    }
-  }
-  header .section1 p {
-    color: rgb(241, 241, 241);
-    font-size: 4rem;
-    margin: 0 3rem;
-    min-width: 15ch;
-    max-width: 100%;
-    grid-area: a2;
-  }
-  @media screen and (max-width: 1200px) {
-    header .section1 p {
-      font-size: 3rem;
-      margin: 0;
-    }
-  }
-  @media screen and (max-width: 580px) {
-    header .section1 p {
-      max-width: 15ch;
-    }
-  }
-  @media screen and (max-width: 430px) {
-    header .section1 p {
-      font-size: 2rem;
-      margin: 0 1rem;
-    }
-  }
-  header .section1 .welcome-image {
-    max-width: 39rem;
-    width: 50%;
-    min-width: 20rem;
-  }
-  @media only screen and (max-height: 925px) {
-    header .section1 .welcome-image {
-      display: none;
-    }
-  }
-  header .section1 .main-button {
-    border-radius: 4px;
-    background-color: rgb(255, 27, 39);
-    letter-spacing: 0.5px;
-    border: none;
-    color: rgb(241, 241, 241);
+    max-width: 15ch;
     text-align: center;
-    font-size: 1.2rem;
-    padding: 1rem 0 1rem 0;
-    width: 20rem;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-    display: inline-block;
-    position: relative;
-    transition: 0.3s;
-    grid-area: a3;
   }
-  @media screen and (max-height: 840px) {
-    header .section1 .main-button {
-      margin: 0;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    header .section1 .main-button {
-      margin-top: 2rem;
-    }
-  }
-  @media screen and (max-width: 330px) {
-    header .section1 .main-button {
-      display: flex;
-      flex-direction: column;
-      max-width: 15ch;
-      text-align: center;
-    }
-  }
+}
+header .section1 .main-button:after {
+  content: "↴";
+  position: absolute;
+  font-size: 2.5rem;
+  color: rgb(241, 241, 241);
+  opacity: 0;
+  top: -0.1rem;
+  left: 85%;
+  transition: 0.3s ease-out;
+}
+@media screen and (max-width: 330px) {
   header .section1 .main-button:after {
-    content: "↴";
-    position: absolute;
-    font-size: 2.5rem;
-    color: rgb(241, 241, 241);
-    opacity: 0;
-    top: -0.1rem;
-    left: 85%;
-    transition: 0.3s ease-out;
+    display: none;
   }
-  @media screen and (max-width: 330px) {
-    header .section1 .main-button:after {
-      display: none;
-    }
-  }
+}
+header .section1 .main-button:hover {
+  text-indent: -1.6rem;
+}
+@media screen and (max-width: 330px) {
   header .section1 .main-button:hover {
-    text-indent: -1.6rem;
+    text-indent: 0;
   }
-  @media screen and (max-width: 330px) {
-    header .section1 .main-button:hover {
-      text-indent: 0;
-    }
-  }
-  header .section1 .main-button:hover:after {
-    opacity: 1;
-    text-indent: 0.5rem;
-  }
+}
+header .section1 .main-button:hover:after {
+  opacity: 1;
+  text-indent: 0.5rem;
+}
+header .section1 #scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.5rem;
+  color: rgb(241, 241, 241);
+  padding: 0.5rem;
+  border-radius: 99rem;
+  transition: 180ms ease-in-out;
+  transform: translateX(-50%);
+  left: 50%;
+}
+header .section1 #scroll-down:hover {
+  cursor: pointer;
+  background: red;
+  color: rgb(47, 47, 47);
+}
+@media only screen and (max-height: 925px) {
   header .section1 #scroll-down {
-    position: absolute;
-    bottom: 2rem;
-    font-size: 1.5rem;
-    color: rgb(241, 241, 241);
-    padding: 0.5rem;
-    border-radius: 99rem;
-    transition: 180ms ease-in-out;
-    transform: translateX(-50%);
-    left: 50%;
+    display: none;
   }
-  header .section1 #scroll-down:hover {
-    cursor: pointer;
-    background: red;
-    color: rgb(47, 47, 47);
+}
+@media screen and (max-width: 768px) {
+  header .section1 #scroll-down {
+    display: none;
   }
-  @media only screen and (max-height: 925px) {
-    header .section1 #scroll-down {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    header .section1 #scroll-down {
-      display: none;
-    }
-  }/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
