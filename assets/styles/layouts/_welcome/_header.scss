@@ -13,7 +13,9 @@ header {
     transition: 0.2s ease;
     position: fixed;
     z-index: 999;
-
+    @media only screen and (max-height: 925px) {
+      display: none;
+    }
     @media screen and (max-width: 768px) {
       display: none;
     }
@@ -74,7 +76,17 @@ header {
     justify-items: center;
     background: $black2;
     padding: 5rem 0 5rem 0;
-
+    @media only screen and (max-height: 500px) {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      row-gap: 3rem;
+      grid-template-areas:
+        "a1 a2"
+        "a1 a3";
+      padding: 0 0 0 ;
+      margin: 0;
+      align-content: center;
+    }
     @media screen and (max-width: 768px) {
       background: $black2;
       padding: 0;
@@ -96,13 +108,20 @@ header {
     // }
 
     #logo {
-      //TODO responsive comme augumecha
-
       width: 40rem;
       min-height: 5rem;
       height: 15rem;
       border-radius: 1rem;
       background: url(/assets/img/logogarage.webp) center/cover;
+      grid-area: a1;
+
+      @media only screen and (max-height: 925px) {
+        width: 30rem;
+        min-height: 5rem;
+        height: 13rem;
+        margin: 0 0 0 0;
+      }
+
       @media screen and (max-width: 768px) {
         width: 100%;
         max-width: 30rem;
@@ -130,6 +149,7 @@ header {
       margin: 0 3rem;
       min-width: 15ch;
       max-width: 100%;
+      grid-area: a2;
       @media screen and (max-width: 1200px) {
         font-size: 3rem;
         margin: 0;
@@ -147,6 +167,9 @@ header {
       max-width: 39rem;
       width: 50%;
       min-width: 20rem;
+      @media only screen and (max-height: 925px)  {
+        display: none;
+      }
     }
 
     .main-button {
@@ -163,6 +186,8 @@ header {
       display: inline-block;
       position: relative;
       transition: 0.3s;
+      grid-area: a3;
+
       @media screen and (max-height: 840px) {
         margin: 0;
       }
@@ -218,6 +243,9 @@ header {
         cursor: pointer;
         background: red;
         color: $black2;
+      }
+      @media only screen and (max-height: 925px) {
+        display: none;
       }
       @media screen and (max-width: 768px) {
         display: none;
