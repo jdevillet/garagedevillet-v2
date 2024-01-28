@@ -13,6 +13,7 @@
   color: rgb(241, 241, 241);
   margin: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -96,7 +97,6 @@ header #navbar {
   justify-content: center;
   width: 100%;
   background: rgb(47, 47, 47);
-  box-shadow: 0 0 3px #333;
   height: 5rem;
   transition: 0.2s ease;
   position: fixed;
@@ -148,6 +148,7 @@ header #navbar ul li #facebook-btn {
 }
 header .section1 {
   height: 100vh;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -184,11 +185,12 @@ header .section1 #logo {
     margin-bottom: 2rem;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 510px) {
   header .section1 #logo {
     max-width: 20rem;
     min-height: 7rem;
-    height: 8rem;
+    height: 9rem;
+    width: 100%;
   }
 }
 @media screen and (max-width: 350px) {
@@ -198,24 +200,32 @@ header .section1 #logo {
     height: 7rem;
   }
 }
-header .section1 .text {
-  height: 8rem;
-  display: flex;
-  align-items: center;
-}
-header .section1 .text p {
+header .section1 p {
   color: rgb(241, 241, 241);
-  font-size: 2rem;
+  font-size: 4rem;
   margin: 0 3rem;
+  min-width: 15ch;
+  max-width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  header .section1 p {
+    font-size: 3rem;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 580px) {
-  header .section1 .text p {
-    margin: 0 2rem;
+  header .section1 p {
     max-width: 15ch;
   }
 }
+@media screen and (max-width: 430px) {
+  header .section1 p {
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
+}
 header .section1 .welcome-image {
-  max-width: 50rem;
+  max-width: 39rem;
   width: 50%;
   min-width: 20rem;
 }
@@ -244,6 +254,14 @@ header .section1 .main-button {
     margin-top: 2rem;
   }
 }
+@media screen and (max-width: 330px) {
+  header .section1 .main-button {
+    display: flex;
+    flex-direction: column;
+    max-width: 15ch;
+    text-align: center;
+  }
+}
 header .section1 .main-button:after {
   content: "↴";
   position: absolute;
@@ -254,8 +272,18 @@ header .section1 .main-button:after {
   left: 85%;
   transition: 0.3s ease-out;
 }
+@media screen and (max-width: 330px) {
+  header .section1 .main-button:after {
+    display: none;
+  }
+}
 header .section1 .main-button:hover {
   text-indent: -1.6rem;
+}
+@media screen and (max-width: 330px) {
+  header .section1 .main-button:hover {
+    text-indent: 0;
+  }
 }
 header .section1 .main-button:hover:after {
   opacity: 1;

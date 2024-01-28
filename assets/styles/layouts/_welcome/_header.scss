@@ -9,7 +9,6 @@ header {
     justify-content: center;
     width: 100%;
     background: $black2;
-    box-shadow: 0 0 3px #333;
     height: 5rem;
     transition: 0.2s ease;
     position: fixed;
@@ -67,12 +66,12 @@ header {
 
   .section1 {
     height: 100vh;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     justify-items: center;
-    // background: url(/assets/img/augu-mecha.webp) center/cover;
     background: $black2;
     padding: 5rem 0 5rem 0;
 
@@ -112,10 +111,11 @@ header {
         border-radius: 0.5rem;
         margin-bottom: 2rem;
       }
-      @media screen and (max-width: 430px) {
+      @media screen and (max-width: 510px) {
         max-width: 20rem;
         min-height: 7rem;
-        height: 8rem;
+        height: 9rem;
+        width: 100%;
       }
       @media screen and (max-width: 350px) {
         max-width: 18rem;
@@ -124,52 +124,29 @@ header {
       }
     }
 
-    .text {
-      height: 8rem;
-      display: flex;
-      align-items: center;
-
-  
-
-      // h1 {
-      //   color: $white1;
-      //   margin: 0 1rem;
-      //   font-size: 3.3rem;
-      //   @media screen and (max-width: 768px) {
-      //     font-size: 2.5rem;
-      //     margin: 1rem 0.5rem 0 0;
-      //   }
-      // }
-      p {
-        color: $white1;
+    p {
+      color: $white1;
+      font-size: 4rem;
+      margin: 0 3rem;
+      min-width: 15ch;
+      max-width: 100%;
+      @media screen and (max-width: 1200px) {
+        font-size: 3rem;
+        margin: 0;
+      }
+      @media screen and (max-width: 580px) {
+        max-width: 15ch;
+      }
+      @media screen and (max-width: 430px) {
         font-size: 2rem;
-        margin:0 3rem;
-        @media screen and (max-width: 580px) {
-          margin: 0 2rem;
-          max-width: 15ch;
-        }
-        
+        margin: 0 1rem;
       }
     }
 
     .welcome-image {
-      // background: url(/assets/img/augu-mecha.webp) center/cover;
-      // height: 50%;
-      max-width: 50rem;
+      max-width: 39rem;
       width: 50%;
       min-width: 20rem;
-      // @media screen and (max-width: 900px) {
-      //   height: 20rem;
-      //   width: 40rem;
-      // }
-      // @media screen and (max-width: 715px) {
-      //   height: 18rem;
-      //   width: 30rem;
-      // }
-      // @media screen and (max-width: 530px) {
-      //   height: 15rem;
-      //   width: 22rem;
-      // }
     }
 
     .main-button {
@@ -192,6 +169,12 @@ header {
       @media screen and (max-width: 768px) {
         margin-top: 2rem;
       }
+      @media screen and (max-width: 330px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 15ch;
+        text-align: center;
+      }
 
       &:after {
         content: "↴";
@@ -202,10 +185,16 @@ header {
         top: -0.1rem;
         left: 85%;
         transition: 0.3s ease-out;
+        @media screen and (max-width: 330px) {
+          display: none;
+        }
       }
 
       &:hover {
         text-indent: -1.6rem;
+        @media screen and (max-width: 330px) {
+          text-indent: 0;
+        }
       }
 
       &:hover:after {
