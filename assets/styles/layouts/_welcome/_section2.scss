@@ -1,22 +1,55 @@
 .services {
-  height: 35rem;
+  height: auto;
+  min-height: 35rem;
   width: 100%;
   background: $redTheme;
-display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @media only screen and (max-width: 1010px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   .container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    row-gap: 1rem;
+    row-gap: 3rem;
     width: 100%;
     height: 100%;
 
+    &:nth-of-type(2) {
+      box-shadow: 0 0 0 2px rgba(82, 1, 1, 0.176);
+    }
+
+    @media only screen and (max-width: 1010px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    @media only screen and (max-width: 796px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
 
     .service1 {
       font-size: 2rem;
       overflow: hidden;
+
+      @media only screen and (max-width: 1880px) {
+        font-size: 1.7rem;
+        max-width: 25ch;
+      }
+      @media only screen and (max-width: 1400px) {
+        font-size: 1.4rem;
+        max-width: 25ch;
+      }
+      @media only screen and (max-width: 1010px) {
+        font-size: 2rem;
+        max-width: 24ch;
+      }
     }
 
     .img {
@@ -24,6 +57,12 @@ display: grid;
       width: 15rem;
       background: rgb(255, 255, 255);
       border-radius: 999px;
+
+      @media only screen and (max-width: 1010px) {
+        height: 10rem;
+        width: 10rem;
+       
+      }
     }
   }
 }
