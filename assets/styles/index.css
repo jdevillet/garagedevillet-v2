@@ -368,4 +368,30 @@ header .section1 #scroll-down:hover {
   header .section1 #scroll-down {
     display: none;
   }
+}
+
+.services {
+  height: 35rem;
+  width: 100%;
+  background: rgb(255, 27, 39);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.services .container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  row-gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.services .container .service1 {
+  font-size: 2rem;
+  overflow: hidden;
+}
+.services .container .img {
+  height: 15rem;
+  width: 15rem;
+  background: rgb(255, 255, 255);
+  border-radius: 999px;
 }/*# sourceMappingURL=index.css.map */
