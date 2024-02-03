@@ -147,10 +147,6 @@ header #navbar ul li:not(:last-of-type):hover:after {
   transform: scaleX(1);
   transform-origin: bottom right;
 }
-header #navbar ul li #facebook-btn {
-  color: black;
-  background-color: red;
-}
 header .section1 {
   height: 100vh;
   max-width: 100%;
@@ -180,7 +176,6 @@ header .section1 {
 }
 @media screen and (max-width: 768px) {
   header .section1 {
-    background: rgb(47, 47, 47);
     padding: 0;
   }
 }
@@ -243,6 +238,7 @@ header .section1 p {
   margin: 0 3rem;
   max-width: 14ch;
   grid-area: a2;
+  text-shadow: 0 0 3px #000;
 }
 @media screen and (max-width: 1200px) {
   header .section1 p {
