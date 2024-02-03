@@ -14,199 +14,211 @@
 
 <body>
 
-  <header>
+  <section class="page-max-width">
 
-    <nav id="navbar">
-
-      <ul>
-        <li>
-          <a class="nav-element" href="#welcome-section">
-            Acceuil
-          </a>
-        </li>
-
-        <li>
-          <a class="nav-element" href="#services">
-            Services
-          </a>
-        </li>
-
-        <li>
-          <a class="nav-element" href="#appointment">
-            Contact
-          </a>
-        </li>
-
-        <li><a class="nav-element" href="https://www.facebook.com/devilletjoeri/" target="_blank">
+    <header>
+      
+      <nav id="navbar">
+        
+        <ul>
+          <li>
+            <a class="nav-element" href="#welcome-section">
+              Acceuil
+            </a>
+          </li>
+          
+          <li>
+            <a class="nav-element" href="#services">
+              Services
+            </a>
+          </li>
+          
+          <li>
+            <a class="nav-element" href="#appointment">
+              Contact
+            </a>
+          </li>
+          
+          <li><a class="nav-element" href="https://www.facebook.com/devilletjoeri/" target="_blank">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
         </li>
-
+        
       </ul>
-
+      
     </nav>
-
+    
     <div class="section1">
-
+      
       <div class="responsive-phone"></div>
       <div class="logo" id="logo"></div>
-
-
+      
+      
       <!-- <h1 class="bold centered">Bienvenue chez <br>Garage Devillet</h1> -->
       <p class="bold centered">Votre sécurité, notre priorité</p>
-
-
+      
+      
       <!-- <div class="welcome-image">
         <img src="/assets/img/augu-mecha.webp" alt="">
       </div> -->
-
+      
       <a href="#appointment" class="main-button centered bold">Prendre rendez-vous</a>
-
+      
       <a href="#services"><i id="scroll-down" class="fa-solid fa-angles-down"></i></a>
     </div>
-
-
+    
+    
   </header>
-
+  
   <!-- ?section 2 -->
-
+  
   <section class="services" id="services">
     <div class="container centered">
-
-      <p class="service1 bold">
-        Changement freins, réparations, etc
-      </p>
-      <div class="img"></div>
+      <div class="service-center">
+        
+        <p class="service1 bold">
+          Changement freins, réparations, etc
+        </p>
+      </div>
+      
+      <img class="img1" src="/assets/img/brake-Z3.webp" alt="">
       <!-- <p class="explanation"></p> -->
-
+      
       <!-- <a href="" class="moreBtn bold">En savoir plus</a> -->
-
+      
     </div>
-
-
+    
+    
     <div class="container centered">
-
-      <p class="service1 bold">
-        Petit et gros entretien du véhicule, etc
-      </p>
-      <div class="img"></div>
+      <div class="service-center">
+        
+        <p class="service1 bold">
+          Tout entretien du véhicule, etc
+        </p>
+      </div>
+      
+      <img class="img2" src="/assets/img/entretien-exemple.jpeg" alt="">
       <!-- <p class="explanation"></p> -->
-
+      
       <!-- <a href="" class="moreBtn bold">En savoir plus</a> -->
-
+      
     </div>
-
-
+    
+    
     <div class="container centered">
-
-      <p class="service1 bold">
-        Préparation Hiver/Eté, montage, équilibrage, permutation, etc
-      </p>
-      <div class="img"></div>
+      
+      <div class="service-center">
+        <p class="service1 bold">
+          Chamgement pneus, équilibrage, etc
+        </p>
+      </div>
+      
+      <img class="img3" src="/assets/img/tire1.webp" alt="">
       <!-- <p class="explanation"></p> -->
-
+      
       <!-- <a href="" class="moreBtn bold">En savoir plus</a> -->
-
+      
     </div>
   </section>
-
-<!-- ? appointment -->
+  
+  <!-- ? appointment -->
   <section class="appointment" id="appointment">
     <h2 class="bold centered big">Prendre RDV</h2>
-
+    
     <!-- <div class="form">
-
+      
       <form action="">
         <div class="form-group">
-
+          
           <label for="formName">
             <i class="fa-regular fa-user icon"></i>
           </label>
           <input type="text" id="formName" placeholder="Nom" required autocomplete="off">
         </div>
-
+        
         <div class="form-group">
-
+          
           <label for="formEmail">
             <i class="fa-regular fa-envelope icon"></i>
             <input type="email" id="formEmail" placeholder="E-mail" required>
+          </div>
+          
+          <div class="form-group message">
+            <textarea id="formMessage" placeholder="Raison du rendez-vous" rows="7"></textarea>
+          </div>
+          
+          <div class="centered">
+            <button type="submit" class="main-button">Envoyer ma demande</button>
+          </div>
+          
+          
+        </form>
+      </div> -->
+      
+      <div class="contact">
+        
+        <div>
+          <h4 class="bold">Adresse</h4>
+          <p>Route de Neufchâteau, 551
+            <br>
+            6700 Arlon
+          </p>
         </div>
-
-        <div class="form-group message">
-          <textarea id="formMessage" placeholder="Raison du rendez-vous" rows="7"></textarea>
+        <div>
+          <h4 class="bold">Téléphone</h4>
+          <p>XXXX.XX.XX.XX</p>
         </div>
-
-        <div class="centered">
-          <button type="submit" class="main-button">Envoyer ma demande</button>
+        <div>
+          <h4 class="bold">Email</h4>
+          <p>info@untitled.ltd</p>
         </div>
-
-
-      </form>
-    </div> -->
-
-    <div class="contact">
-
-      <div>
-        <h4 class="bold">Adresse</h4>
-        <p>Route de Neufchâteau, 551
-          <br>
-          6700 Arlon
-        </p>
-      </div>
-      <div>
-        <h4 class="bold">Téléphone</h4>
-        <p>XXXX.XX.XX.XX</p>
-      </div>
-      <div>
-        <h4 class="bold">Email</h4>
-        <p>info@untitled.ltd</p>
-      </div>
-
-      <div class="schedule">
-        <h4 class="bold">Horaires</h4>
-        <div class="days">
-          <div class="day">
-            <p>Lundi</p>
-            <p>fermé</p>
+        
+        <div class="schedule">
+          <h4 class="bold">Horaires</h4>
+          <div class="days">
+            <div class="day">
+              <p>Lundi</p>
+              <p>fermé</p>
+            </div>
+            <div class="day">
+              <p>Mardi</p>
+              <p>09:00 - 18:00</p>
+            </div>
+            <div class="day">
+              <p>Mercredi</p>
+              <p>09:00 - 18:00</p>
+            </div>
+            <div class="day">
+              <p>Jeudi</p>
+              <p>09:00 - 18:00</p>
+            </div>
+            <div class="day">
+              <p>Vendredi</p>
+              <p>09:00 - 18:00</p>
+            </div>
+            <div class="day">
+              <p>Samedi</p>
+              <p>09:00 - 14:00</p>
+            </div>
+            <div class="day">
+              <p>Dimanche</p>
+              <p>fermé</p>
+            </div>
+            <p class="except">Les horaires d'ouverture peuvent varier les jours fériés</p>
           </div>
-          <div class="day">
-            <p>Mardi</p>
-            <p>09:00 - 18:00</p>
-          </div>
-          <div class="day">
-            <p>Mercredi</p>
-            <p>09:00 - 18:00</p>
-          </div>
-          <div class="day">
-            <p>Jeudi</p>
-            <p>09:00 - 18:00</p>
-          </div>
-          <div class="day">
-            <p>Vendredi</p>
-            <p>09:00 - 18:00</p>
-          </div>
-          <div class="day">
-            <p>Samedi</p>
-            <p>09:00 - 14:00</p>
-          </div>
-          <div class="day">
-            <p>Dimanche</p>
-            <p>fermé</p>
-          </div>
-          <p class="except">Les horaires d'ouverture peuvent varier les jours fériés</p>
         </div>
       </div>
-    </div>
+    </section>
+    
+    <footer>
+      
+      
+      <a class="hidden goBack" href="#welcome-section"> Revenir en haut de la page</a>
+    </footer>
+    
   </section>
-
-  <footer>
-
-
-    <a class="hidden goBack" href="#welcome-section"> Revenir en haut de la page</a>
-  </footer>
-
-
-  <script src="index.js"></script>
-</body>
-
-</html>
+    
+    <script src="index.js"></script>
+  </body>
+  
+  </html>

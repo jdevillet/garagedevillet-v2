@@ -2,12 +2,14 @@ header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   // ********************DEBUT NAVBAR 1**************** //
   #navbar {
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: 2000px;
     background: $black2;
     height: 5rem;
     transition: 0.2s ease;

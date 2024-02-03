@@ -1,68 +1,94 @@
 .services {
-  height: auto;
-  min-height: 35rem;
-  width: 100%;
-  background: $redTheme;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  height: auto;
+  min-height: 25rem;
+  width: 100%;
+  background: $black2;
+  align-items: center;
+  justify-items: center;
+  padding: 3rem 2rem;
 
   @media only screen and (max-width: 1010px) {
     display: flex;
     flex-direction: column;
   }
+  @media only screen and (max-width: 600px) {
+    padding: 0 2rem;
+  }
 
   .container {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    row-gap: 3rem;
-    width: 100%;
-    height: 100%;
-
-    &:nth-of-type(2) {
-      box-shadow: 0 0 0 2px rgba(82, 1, 1, 0.176);
-    }
-
+   display: flex;
+   flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: $redTheme;
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    margin: 1rem 0;
+    max-height: 20rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px 2px black;
+    
     @media only screen and (max-width: 1010px) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
+      display: grid;
+      grid-template-rows: 1fr;
+      max-height: 15rem;
+      grid-template-columns: 40% 60%;
+      justify-items: center;
     }
     @media only screen and (max-width: 796px) {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      margin: 1rem 0;
+      max-height: 20rem;
+    }
+    
+    .service-center {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .service1 {
+        font-size: 1.5rem;
+        overflow: hidden;
+        letter-spacing: 1px;
+        font-weight: 600;
+
+        @media only screen and (max-width: 1880px) {
+          font-size: 1.5rem;
+          max-width: 20ch;
+        }
+        @media only screen and (max-width: 1400px) {
+          font-size: 1.4rem;
+        }
+        @media only screen and (max-width: 1010px) {
+          font-size: 1.5rem;
+        }
+        @media only screen and (max-width: 796px) {
+          max-width: 100%;
+        }
+      }
     }
 
-    .service1 {
-      font-size: 2rem;
-      overflow: hidden;
-
-      @media only screen and (max-width: 1880px) {
-        font-size: 1.7rem;
-        max-width: 25ch;
-      }
-      @media only screen and (max-width: 1400px) {
-        font-size: 1.4rem;
-        max-width: 25ch;
-      }
-      @media only screen and (max-width: 1010px) {
-        font-size: 2rem;
-        max-width: 24ch;
-      }
+    .img1,
+    .img2,
+    .img3 {
+      height: 20rem;
+      width:30rem;
+      max-height: 15rem;
     }
-
-    .img {
-      height: 15rem;
-      width: 15rem;
-      background: rgb(255, 255, 255);
-      border-radius: 999px;
-
-      @media only screen and (max-width: 1010px) {
-        height: 10rem;
-        width: 10rem;
-       
-      }
+    .img1 {
+      background: url(/assets/img/brake-Z3.webp) center/cover;
+    }
+    .img2 {
+      background: url(/assets/img/entretien-exemple.jpeg) center/cover;
+    }
+    .img3 {
+      background: url(/assets/img/tire1.webp) center/cover;
     }
   }
 }

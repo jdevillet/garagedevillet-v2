@@ -19,6 +19,11 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: rgb(47, 47, 47);
+}
+body .page-max-width {
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 img,
@@ -91,11 +96,13 @@ header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 header #navbar {
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 2000px;
   background: rgb(47, 47, 47);
   height: 5rem;
   transition: 0.2s ease;
@@ -366,12 +373,15 @@ header .section1 #scroll-down:hover {
 }
 
 .services {
-  height: auto;
-  min-height: 35rem;
-  width: 100%;
-  background: rgb(255, 27, 39);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  height: auto;
+  min-height: 25rem;
+  width: 100%;
+  background: rgb(47, 47, 47);
+  align-items: center;
+  justify-items: center;
+  padding: 3rem 2rem;
 }
 @media only screen and (max-width: 1010px) {
   .services {
@@ -379,62 +389,90 @@ header .section1 #scroll-down:hover {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 600px) {
+  .services {
+    padding: 0 2rem;
+  }
+}
 .services .container {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  row-gap: 3rem;
-  width: 100%;
-  height: 100%;
-}
-.services .container:nth-of-type(2) {
-  box-shadow: 0 0 0 2px rgba(82, 1, 1, 0.176);
+  justify-items: center;
+  align-items: center;
+  background: rgb(255, 27, 39);
+  width: auto;
+  max-width: 90%;
+  height: auto;
+  margin: 1rem 0;
+  max-height: 20rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px 2px black;
 }
 @media only screen and (max-width: 1010px) {
   .services .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-rows: 1fr;
+    max-height: 15rem;
+    grid-template-columns: 40% 60%;
+    justify-items: center;
   }
 }
 @media only screen and (max-width: 796px) {
   .services .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    margin: 1rem 0;
+    max-height: 20rem;
   }
 }
-.services .container .service1 {
-  font-size: 2rem;
+.services .container .service-center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.services .container .service-center .service1 {
+  font-size: 1.5rem;
   overflow: hidden;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 @media only screen and (max-width: 1880px) {
-  .services .container .service1 {
-    font-size: 1.7rem;
-    max-width: 25ch;
+  .services .container .service-center .service1 {
+    font-size: 1.5rem;
+    max-width: 20ch;
   }
 }
 @media only screen and (max-width: 1400px) {
-  .services .container .service1 {
+  .services .container .service-center .service1 {
     font-size: 1.4rem;
-    max-width: 25ch;
   }
 }
 @media only screen and (max-width: 1010px) {
-  .services .container .service1 {
-    font-size: 2rem;
-    max-width: 24ch;
+  .services .container .service-center .service1 {
+    font-size: 1.5rem;
   }
 }
-.services .container .img {
-  height: 15rem;
-  width: 15rem;
-  background: rgb(255, 255, 255);
-  border-radius: 999px;
-}
-@media only screen and (max-width: 1010px) {
-  .services .container .img {
-    height: 10rem;
-    width: 10rem;
+@media only screen and (max-width: 796px) {
+  .services .container .service-center .service1 {
+    max-width: 100%;
   }
+}
+.services .container .img1,
+.services .container .img2,
+.services .container .img3 {
+  height: 20rem;
+  width: 30rem;
+  max-height: 15rem;
+}
+.services .container .img1 {
+  background: url(/assets/img/brake-Z3.webp) center/cover;
+}
+.services .container .img2 {
+  background: url(/assets/img/entretien-exemple.jpeg) center/cover;
+}
+.services .container .img3 {
+  background: url(/assets/img/tire1.webp) center/cover;
 }/*# sourceMappingURL=index.css.map */

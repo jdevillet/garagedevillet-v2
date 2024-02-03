@@ -27,6 +27,12 @@ $lighterRed: rgba(253, 99, 106, 0.858);
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: $black2;
+
+  .page-max-width{
+    max-width: 2000px;
+    margin: 0 auto;
+  }
 }
 img,
 picture,
