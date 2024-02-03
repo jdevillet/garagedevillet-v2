@@ -74,7 +74,7 @@ header {
     justify-content: space-around;
     align-items: center;
     justify-items: center;
-    background: $black2;
+    background: url(/assets/img/augu-mecha.webp) center/cover;
     padding: 5rem 0 5rem 0;
 
     @media only screen and (max-height: 500px) {
@@ -160,7 +160,6 @@ header {
       font-size: 4rem;
       margin: 0 3rem;
       max-width:14ch;
-      max-width: 100%;
       grid-area: a2;
 
       
