@@ -1,6 +1,5 @@
 let h = window.innerHeight;
 
-
 function navShorter(){
   window.addEventListener("scroll", (e) => {
     if (window.scrollY > 40) {

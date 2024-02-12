@@ -92,6 +92,33 @@ a {
   font-size: 1.1rem;
 }
 
+#scroll-btn, .down {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.5rem;
+  color: rgb(241, 241, 241);
+  padding: 0.5rem;
+  border-radius: 99rem;
+  transition: 180ms ease-in-out;
+  transform: translateX(-50%);
+  left: 50%;
+}
+#scroll-btn:hover, .down:hover {
+  cursor: pointer;
+  background: red;
+  color: rgb(47, 47, 47);
+}
+@media only screen and (max-height: 925px) {
+  #scroll-btn, .down {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #scroll-btn, .down {
+    display: none;
+  }
+}
+
 header {
   min-height: 100vh;
   display: flex;
@@ -345,7 +372,7 @@ header .section1 .main-button:hover:after {
   opacity: 1;
   text-indent: 0.5rem;
 }
-header .section1 #scroll-down {
+header .section1 #scroll-btn {
   position: absolute;
   bottom: 2rem;
   font-size: 1.5rem;
@@ -356,18 +383,18 @@ header .section1 #scroll-down {
   transform: translateX(-50%);
   left: 50%;
 }
-header .section1 #scroll-down:hover {
+header .section1 #scroll-btn:hover {
   cursor: pointer;
   background: red;
   color: rgb(47, 47, 47);
 }
 @media only screen and (max-height: 925px) {
-  header .section1 #scroll-down {
+  header .section1 #scroll-btn {
     display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  header .section1 #scroll-down {
+  header .section1 #scroll-btn {
     display: none;
   }
 }
@@ -406,7 +433,6 @@ header .section1 #scroll-down:hover {
   margin: 1rem 0;
   max-height: 20rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0 20px 2px black;
 }
 @media only screen and (max-width: 1010px) {
   .services .container {
@@ -491,24 +517,37 @@ header .section1 #scroll-down:hover {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
 }
-.appointment .contact .map {
-  overflow: hidden;
-  width: 100%;
-  max-width: 45rem;
+@media only screen and (max-width: 560px) {
+  .appointment .contact {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .appointment .contact .info-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.2rem;
+  display: grid;
+  grid-template-areas: "h1 a1" "h1 t1" "h1 m1";
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  align-items: center;
 }
 .appointment .contact .info-container .contact-infos {
   display: flex;
   flex-direction: column;
 }
+.appointment .contact .info-container .contact-infos .address {
+  grid-area: a1;
+}
+.appointment .contact .info-container .contact-infos .phone {
+  grid-area: t1;
+}
+.appointment .contact .info-container .contact-infos .mail {
+  grid-area: m1;
+}
 .appointment .contact .info-container .contact-infos p,
 .appointment .contact .info-container .contact-infos a {
   padding-left: 0.5rem;
   width: 100%;
+  word-break: break-all;
 }
 .appointment .contact .info-container .contact-infos #whatsapp {
   width: auto;
@@ -521,6 +560,7 @@ header .section1 #scroll-down:hover {
   width: 100%;
 }
 .appointment .contact .schedule {
+  grid-area: h1;
   padding-top: 1.5rem;
 }
 .appointment .contact .schedule .days {
@@ -540,4 +580,9 @@ header .section1 #scroll-down:hover {
 }
 .appointment .contact .schedule .days .day:last-of-type::after {
   display: none;
+}
+
+footer {
+  height: 5rem;
+  position: relative;
 }/*# sourceMappingURL=index.css.map */

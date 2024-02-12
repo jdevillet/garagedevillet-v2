@@ -97,3 +97,26 @@ a {
     font-size: 1.1rem;
   }
 }
+#scroll-btn, .down{
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.5rem;
+  color: $white1;
+  padding: 0.5rem;
+  // border: 1px solid red;
+  border-radius: 99rem;
+  transition: 180ms ease-in-out;
+  transform: translateX(-50%);
+  left: 50%;
+  &:hover {
+    cursor: pointer;
+    background: red;
+    color: $black2;
+  }
+  @media only screen and (max-height: 925px) {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
