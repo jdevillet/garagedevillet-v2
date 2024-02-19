@@ -510,76 +510,54 @@ header .section1 #scroll-btn:hover {
   background: url(/assets/img/tire1.webp) center/cover;
 }
 
+.appointment {
+  margin: auto;
+  width: 50%;
+}
+.appointment h2 {
+  font-size: 3rem;
+}
 .appointment .contact {
   display: flex;
-  margin: 3rem;
   justify-content: center;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-}
-@media only screen and (max-width: 560px) {
-  .appointment .contact {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-.appointment .contact .info-container {
-  display: grid;
-  grid-template-areas: "h1 a1" "h1 t1" "h1 m1";
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-  align-items: center;
-}
-.appointment .contact .info-container .contact-infos {
-  display: flex;
-  flex-direction: column;
-}
-.appointment .contact .info-container .contact-infos .address {
-  grid-area: a1;
-}
-.appointment .contact .info-container .contact-infos .phone {
-  grid-area: t1;
-}
-.appointment .contact .info-container .contact-infos .mail {
-  grid-area: m1;
-}
-.appointment .contact .info-container .contact-infos p,
-.appointment .contact .info-container .contact-infos a {
-  padding-left: 0.5rem;
-  width: 100%;
-  word-break: break-all;
-}
-.appointment .contact .info-container .contact-infos #whatsapp {
-  width: auto;
-  max-width: 15rem;
-  height: auto;
-  padding: 0.5rem 0;
-}
-.appointment .contact .info-container .contact-infos #whatsapp img {
-  height: 100%;
-  width: 100%;
+  gap: 3rem;
 }
 .appointment .contact .schedule {
-  grid-area: h1;
-  padding-top: 1.5rem;
-}
-.appointment .contact .schedule .days {
   display: flex;
   flex-direction: column;
 }
+.appointment .contact .schedule h4 {
+  font-size: 1.3rem;
+}
+.appointment .contact .schedule .days {
+  max-width: 12rem;
+}
 .appointment .contact .schedule .days .day {
-  padding: 0.3rem;
-  position: relative;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
 }
-.appointment .contact .schedule .days .day:after {
-  content: "";
-  position: absolute;
-  background-color: white;
-  height: 1px;
-  width: 100%;
+.appointment .contact .schedule .days .except {
+  margin-top: 0.5rem;
 }
-.appointment .contact .schedule .days .day:last-of-type::after {
-  display: none;
+.appointment .contact .info-container {
+  display: flex;
+  flex-direction: column;
+}
+.appointment .contact .info-container .address {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.appointment .contact .info-container .address #btn {
+  background-color: rgb(255, 27, 39);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 footer {
