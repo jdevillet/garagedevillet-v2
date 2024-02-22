@@ -600,9 +600,12 @@ header .section1 #scroll-btn:hover {
 .appointment .contact .payment {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
-.appointment .contact .payment h4 {
-  margin-bottom: 0.3rem;
+@media screen and (max-width: 900px) {
+  .appointment .contact .payment {
+    margin: 0 1rem;
+  }
 }
 .appointment .contact .payment .payment-methods {
   display: grid;
