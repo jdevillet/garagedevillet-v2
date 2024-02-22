@@ -517,7 +517,9 @@ header .section1 #scroll-btn:hover {
 .appointment .contact {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
+  min-height: 20rem;
 }
 .appointment .contact .schedule {
   display: flex;
@@ -587,6 +589,18 @@ header .section1 #scroll-btn:hover {
 }
 .appointment .contact .mail #mailBtn:hover {
   filter: brightness(70%);
+}
+.appointment .contact .payment {
+  display: flex;
+  flex-direction: column;
+}
+.appointment .contact .payment h4 {
+  margin-bottom: 0.3rem;
+}
+.appointment .contact .payment .payment-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5.1rem, 1fr));
+  align-items: center;
 }
 
 footer {
