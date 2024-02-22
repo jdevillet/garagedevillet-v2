@@ -33,6 +33,7 @@
       flex-direction: column;
       justify-content: space-between;
 
+
       .address {
         display: flex;
         flex-direction: column;
@@ -57,6 +58,9 @@
       }
 
       .phone {
+        h4{
+          margin-top: .6rem;
+        }
         #whatsappImg {
           width: 100%;
           min-width: 10rem;
@@ -71,6 +75,9 @@
     }
 
     .mail {
+      h4{
+        margin-top: .6rem;
+      }
       #mailBtn {
         background: $redTheme;
         width: 100%;

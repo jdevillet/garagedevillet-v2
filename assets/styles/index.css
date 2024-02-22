@@ -566,6 +566,9 @@ header .section1 #scroll-btn:hover {
 .appointment .contact .info-container .address a:hover {
   filter: brightness(70%);
 }
+.appointment .contact .info-container .phone h4 {
+  margin-top: 0.6rem;
+}
 .appointment .contact .info-container .phone #whatsappImg {
   width: 100%;
   min-width: 10rem;
@@ -574,6 +577,9 @@ header .section1 #scroll-btn:hover {
 }
 .appointment .contact .info-container .phone #whatsappImg:hover {
   filter: brightness(70%);
+}
+.appointment .contact .mail h4 {
+  margin-top: 0.6rem;
 }
 .appointment .contact .mail #mailBtn {
   background: rgb(255, 27, 39);
