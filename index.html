@@ -124,9 +124,9 @@
     <!-- ? appointment -->
     <section class="appointment" id="appointment">
       <h2 class="bold centered big">Prendre RDV</h2>
-      
+
       <div class="contact">
-        
+
         <div class="schedule">
           <h4 class="bold">Horaires</h4>
           <div class="days">
@@ -162,37 +162,42 @@
           </div>
         </div>
         <div class="info-container">
-          
+
           <div class="address contact-infos">
             <h4 class="bold">Adresse</h4>
             <p>Route de Neufchâteau, 551
               <br>
               6700 Arlon
             </p>
-            <button id="btn">Itinéraire</button>
-            <a id="itineraryBtn" href="#">Itinéraire</a>
+
+            <a id="itineraryBtn" target="_blank"
+              href="https://www.google.com/maps/dir//Garage+Devillet,+Rte+de+Neufch%C3%A2teau+551,+6700+Arlon/@49.6986485,5.7475847,17.25z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47eabb2719b540d9:0x2c494c5be1884f54!2m2!1d5.7419073!2d49.6989611!3e0?entry=ttu"><i
+                class="fa-solid fa-location-dot"></i> Voir l'itinéraire</a>
           </div>
 
           <div class="phone contact-infos">
             <h4 class="bold">Téléphone</h4>
             <a id="phone-number" href="tel:+32471203473">0471/20.34.73</a>
 
-            <a id="whatsapp" href="https://wa.me/32471203473"><img src="/assets/img/WhatsAppButtonGreenMedium.svg"
-                alt="Contacter sur WhatsApp"></a>
+            <a id="whatsapp" target="_blank" href="https://wa.me/32471203473"><img id="whatsappImg"
+                src="/assets/img/WhatsAppButtonGreenMedium.svg" alt="Contacter sur WhatsApp"></a>
           </div>
 
           <div class="mail contact-infos">
             <h4 class="bold">Email</h4>
 
 
-            <a href=mailto:"garage.devillet.heinsch@gmail.com">Contacter par email</a>
+
+
+            <a id="mailBtn" href=mailto:garage.devillet.heinsch@gmail.com?subject=Rendez-vous><i
+                class="fa-solid fa-envelope"></i>Contacter par email</a>
           </div>
 
-          
-          
+
+
         </div>
         <div class="payment-methods">
-          <p>Moyens de paiement acceptés sur place :</p>
+          <p class="bold">Moyens de paiement acceptés sur place :</p>
           <p>Espèces</p>
           <img src="/assets/img/Bancontact-Original-logo-RGB.svg" alt="Bancontact_Logo">
         </div>

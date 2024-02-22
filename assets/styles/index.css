@@ -510,12 +510,9 @@ header .section1 #scroll-btn:hover {
   background: url(/assets/img/tire1.webp) center/cover;
 }
 
-.appointment {
-  margin: auto;
-  width: 50%;
-}
 .appointment h2 {
   font-size: 3rem;
+  margin-bottom: 2rem;
 }
 .appointment .contact {
   display: flex;
@@ -543,21 +540,53 @@ header .section1 #scroll-btn:hover {
 .appointment .contact .info-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .appointment .contact .info-container .address {
   display: flex;
   flex-direction: column;
   height: auto;
 }
-.appointment .contact .info-container .address #btn {
-  background-color: rgb(255, 27, 39);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+.appointment .contact .info-container .address a {
+  background: rgb(255, 27, 39);
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: 600;
+  gap: 0.5rem;
+  align-items: center;
+}
+.appointment .contact .info-container .address a:hover {
+  filter: brightness(70%);
+}
+.appointment .contact .info-container .phone #whatsappImg {
+  width: 100%;
+  min-width: 10rem;
+  height: 3rem;
+  transition: 0.3s ease;
+}
+.appointment .contact .info-container .phone #whatsappImg:hover {
+  filter: brightness(70%);
+}
+.appointment .contact .mail #mailBtn {
+  background: rgb(255, 27, 39);
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: 600;
+  gap: 0.5rem;
+  align-items: center;
+}
+.appointment .contact .mail #mailBtn:hover {
+  filter: brightness(70%);
 }
 
 footer {
