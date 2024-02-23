@@ -403,117 +403,23 @@ header .section1 #scroll-btn:hover {
   }
 }
 
-.services {
+.servicesV2 {
+  min-height: 50rem;
+  margin: 2rem 2rem 0;
+}
+.servicesV2 h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.servicesV2 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: auto;
-  min-height: 25rem;
-  width: 100%;
-  background: rgb(47, 47, 47);
-  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   justify-items: center;
-  padding: 3rem 2rem;
+  gap: 1rem;
 }
-@media only screen and (max-width: 1010px) {
-  .services {
-    display: flex;
-    flex-direction: column;
-  }
+.appointment {
+  margin-top: 2rem;
 }
-@media only screen and (max-width: 600px) {
-  .services {
-    padding: 0 1rem;
-  }
-}
-.services .container {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  background: rgb(255, 27, 39);
-  width: auto;
-  max-width: 90%;
-  height: auto;
-  margin: 1rem 0;
-  max-height: 20rem;
-  border-radius: 0.5rem;
-}
-@media only screen and (max-width: 1010px) {
-  .services .container {
-    display: grid;
-    grid-template-rows: 1fr;
-    max-height: 15rem;
-    grid-template-columns: 40% 60%;
-    justify-items: center;
-  }
-}
-@media only screen and (max-width: 796px) {
-  .services .container {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-    max-height: 20rem;
-  }
-}
-.services .container .service-center {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-}
-.services .container .service-center .service1 {
-  font-size: 1.5rem;
-  overflow: hidden;
-  letter-spacing: 1px;
-  font-weight: 600;
-  padding: 0.6rem;
-}
-@media only screen and (max-width: 1880px) {
-  .services .container .service-center .service1 {
-    font-size: 1.5rem;
-    max-width: 20ch;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .services .container .service-center .service1 {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (max-width: 1010px) {
-  .services .container .service-center .service1 {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 796px) {
-  .services .container .service-center .service1 {
-    max-width: 100%;
-  }
-}
-@media only screen and (max-width: 367px) {
-  .services .container .service-center .service1 {
-    font-size: 1.2rem;
-  }
-}
-.services .container .img1,
-.services .container .img2,
-.services .container .img3 {
-  height: 20rem;
-  width: 30rem;
-  max-height: 15rem;
-}
-.services .container .img1 {
-  background: url(/assets/img/brake-Z3.webp) center/cover;
-}
-.services .container .img2 {
-  background: url(/assets/img/entretien-exemple.jpeg) center/cover;
-}
-.services .container .img3 {
-  background: url(/assets/img/tire1.webp) center/cover;
-}
-
 .appointment h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -611,6 +517,9 @@ header .section1 #scroll-btn:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(5.1rem, 1fr));
   align-items: center;
+}
+.appointment .contact .payment .payment-methods .euroNote {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(90deg) brightness(80%) contrast(119%);
 }
 
 footer {
