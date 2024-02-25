@@ -227,7 +227,7 @@ header .section1 #logo {
   min-height: 5rem;
   height: 15rem;
   border-radius: 1rem;
-  background: url(/assets/img/logogarage.webp) center/cover;
+  background: url(/assets/img/logogarage.svg) center/cover;
   grid-area: a1;
 }
 @media only screen and (max-height: 925px) {
