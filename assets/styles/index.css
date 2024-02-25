@@ -96,7 +96,8 @@ h4 {
   font-size: 1.1rem;
 }
 
-#scroll-btn, .down {
+#scroll-btn,
+.down {
   position: absolute;
   bottom: 2rem;
   font-size: 1.5rem;
@@ -107,20 +108,44 @@ h4 {
   transform: translateX(-50%);
   left: 50%;
 }
-#scroll-btn:hover, .down:hover {
+#scroll-btn:hover,
+.down:hover {
   cursor: pointer;
   background: red;
   color: rgb(47, 47, 47);
 }
 @media only screen and (max-height: 925px) {
-  #scroll-btn, .down {
+  #scroll-btn,
+  .down {
     display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  #scroll-btn, .down {
+  #scroll-btn,
+  .down {
     display: none;
   }
+}
+
+.rdvBTN {
+  background: rgb(255, 27, 39);
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.hoverBTN {
+  transition: 0.2s;
+}
+.hoverBTN:hover {
+  filter: brightness(70%);
 }
 
 header {
@@ -337,6 +362,7 @@ header .section1 .main-button {
   position: relative;
   transition: 0.3s;
   grid-area: a3;
+  cursor: pointer;
 }
 @media screen and (max-height: 840px) {
   header .section1 .main-button {
@@ -468,69 +494,31 @@ header .section1 #scroll-btn:hover {
   flex-direction: column;
   height: auto;
 }
-.appointment .contact .info-container .address a {
-  background: rgb(255, 27, 39);
-  width: 100%;
-  padding: 0.5rem 0;
-  display: flex;
-  justify-content: center;
-  border-radius: 0.5rem;
-  transition: 0.3s ease;
-  font-size: 1.1rem;
-  font-weight: 600;
-  gap: 0.5rem;
-  align-items: center;
-}
-.appointment .contact .info-container .address a:hover {
-  filter: brightness(70%);
-}
-.appointment .contact .info-container .phone h4 {
+.appointment .contact .phone h4 {
   margin-top: 0.6rem;
 }
-.appointment .contact .info-container .phone #whatsappImg {
-  width: 100%;
-  min-width: 10rem;
-  height: 3rem;
-  transition: 0.3s ease;
+.appointment .contact .phone #whatsappBtn {
+  background: rgb(37, 211, 102);
 }
-.appointment .contact .info-container .phone #whatsappImg:hover {
-  filter: brightness(70%);
-}
-.appointment .contact .mail h4 {
+.appointment .mail h4 {
   margin-top: 0.6rem;
 }
-.appointment .contact .mail #mailBtn {
-  background: rgb(255, 27, 39);
-  width: 100%;
-  padding: 0.5rem 0;
-  display: flex;
-  justify-content: center;
-  border-radius: 0.5rem;
-  transition: 0.3s ease;
-  font-size: 1.1rem;
-  font-weight: 600;
-  gap: 0.5rem;
-  align-items: center;
-}
-.appointment .contact .mail #mailBtn:hover {
-  filter: brightness(70%);
-}
-.appointment .contact .payment {
+.appointment .payment {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 @media screen and (max-width: 900px) {
-  .appointment .contact .payment {
+  .appointment .payment {
     margin: 0 1rem;
   }
 }
-.appointment .contact .payment .payment-methods {
+.appointment .payment .payment-methods {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(5.1rem, 1fr));
   align-items: center;
 }
-.appointment .contact .payment .payment-methods .euroNote {
+.appointment .payment .payment-methods .euroNote {
   filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(90deg) brightness(80%) contrast(119%);
 }
 

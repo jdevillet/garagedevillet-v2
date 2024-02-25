@@ -196,6 +196,7 @@ header {
       position: relative;
       transition: 0.3s;
       grid-area: a3;
+      cursor: pointer;
 
       @media screen and (max-height: 840px) {
         margin: 0;

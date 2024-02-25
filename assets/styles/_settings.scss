@@ -29,7 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: $black2;
 
-  .page-max-width{
+  .page-max-width {
     max-width: 2000px;
     margin: 0 auto;
   }
@@ -65,7 +65,7 @@ a {
   isolation: isolate;
 }
 /*******************************/
-h4{
+h4 {
   font-size: 1.3rem;
 }
 .bold {
@@ -99,7 +99,8 @@ h4{
     font-size: 1.1rem;
   }
 }
-#scroll-btn, .down{
+#scroll-btn,
+.down {
   position: absolute;
   bottom: 2rem;
   font-size: 1.5rem;
@@ -120,5 +121,27 @@ h4{
   }
   @media screen and (max-width: 768px) {
     display: none;
+  }
+}
+
+
+.rdvBTN{
+  background: $redTheme;
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.hoverBTN{
+  transition: 0.2s;
+  &:hover {
+    filter: brightness(70%);
   }
 }
