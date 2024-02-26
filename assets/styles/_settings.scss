@@ -145,3 +145,20 @@ h4 {
     filter: brightness(70%);
   }
 }
+
+.active_tab{
+  background-color: $lighterRed;
+
+}
+.active{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+.prev{
+
+}
+.next{
+  
+}
