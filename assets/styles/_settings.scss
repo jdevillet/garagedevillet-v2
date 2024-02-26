@@ -9,7 +9,7 @@ $black2: rgb(47, 47, 47);
 $white1: rgb(241, 241, 241);
 $white2: rgb(230, 230, 230);
 $redTheme: rgb(255, 27, 39);
-$lighterRed: rgba(253, 99, 106, 0.858);
+$lighterRed: rgba(255, 75, 84, 0.824);
 
 *,
 *::before,
@@ -23,7 +23,14 @@ $lighterRed: rgba(253, 99, 106, 0.858);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -124,8 +131,7 @@ h4 {
   }
 }
 
-
-.rdvBTN{
+.rdvBTN {
   background: $redTheme;
   width: 100%;
   padding: 0.5rem 0;
@@ -139,26 +145,24 @@ h4 {
   text-align: center;
 }
 
-.hoverBTN{
+.hoverBTN {
   transition: 0.2s;
   &:hover {
     filter: brightness(70%);
   }
 }
 
-.active_tab{
-  background-color: $lighterRed;
-
+.active_tab {
+  background-color: $redTheme;
 }
-.active{
+
+.active {
   display: block;
 }
-.hidden{
+.hidden {
   display: none;
 }
-.prev{
-
+.prev {
 }
-.next{
-  
+.next {
 }
