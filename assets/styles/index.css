@@ -414,32 +414,6 @@ header .section1 .main-button:hover:after {
   opacity: 1;
   text-indent: 0.5rem;
 }
-header .section1 #scroll-btn {
-  position: absolute;
-  bottom: 2rem;
-  font-size: 1.5rem;
-  color: rgb(241, 241, 241);
-  padding: 0.5rem;
-  border-radius: 99rem;
-  transition: 180ms ease-in-out;
-  transform: translateX(-50%);
-  left: 50%;
-}
-header .section1 #scroll-btn:hover {
-  cursor: pointer;
-  background: red;
-  color: rgb(47, 47, 47);
-}
-@media only screen and (max-height: 925px) {
-  header .section1 #scroll-btn {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  header .section1 #scroll-btn {
-    display: none;
-  }
-}
 
 .servicesV2 {
   min-height: 50rem;
