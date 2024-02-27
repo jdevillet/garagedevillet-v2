@@ -502,6 +502,7 @@ header .section1 .main-button:hover:after {
   font-size: 1.1rem;
 }
 .servicesV2 .tabs-container .pcss3t > ul > li {
+  display: flex;
   position: absolute;
   width: 100%;
   overflow: auto;
