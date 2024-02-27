@@ -1,10 +1,11 @@
 let h = window.innerHeight;
 
-function navShorter(){
+
+function navShorter() {
   window.addEventListener("scroll", (e) => {
     if (window.scrollY > 40) {
       navbar.style.height = "3rem";
-    }else {
+    } else {
       navbar.style.height = "5rem";
     }
   });
@@ -16,4 +17,5 @@ window.addEventListener("load", (e) => {
     navbar.style.height = "3rem";
   }
 });
+
 

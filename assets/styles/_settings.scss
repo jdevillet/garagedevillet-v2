@@ -154,6 +154,8 @@ h4 {
 
 .active_tab {
   background-color: $redTheme;
+  z-index: 9;
+  transition: 0;
 }
 
 .active {
@@ -162,7 +164,4 @@ h4 {
 .hidden {
   display: none;
 }
-.prev {
-}
-.next {
-}
+
