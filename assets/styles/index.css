@@ -477,10 +477,11 @@ header .section1 .main-button:hover:after {
   position: relative;
   display: inline-block;
   margin: 0;
+  top: 0.7rem;
   padding: 0;
-  border: 0;
-  outline: none;
+  background: rgb(47, 47, 47);
   cursor: pointer;
+  box-shadow: 0px 0px 4px 0px rgb(23, 20, 21);
   transition: all 0.1s;
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
@@ -502,11 +503,11 @@ header .section1 .main-button:hover:after {
   font-size: 1.1rem;
 }
 .servicesV2 .tabs-container .pcss3t > ul > li {
-  display: flex;
   position: absolute;
   width: 100%;
   overflow: auto;
   padding: 30px 40px 0;
+  margin: auto;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   opacity: 0;
@@ -515,6 +516,40 @@ header .section1 .main-button:hover:after {
   -ms-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
+}
+.servicesV2 .tabs-container .pcss3t > ul > li .text_wrapper {
+  display: block;
+}
+.servicesV2 .tabs-container .pcss3t > ul > li .text_wrapper img {
+  float: right;
+  height: auto;
+  width: 60%;
+  margin: 0 0 1rem 1rem;
+  box-shadow: 0px 0px 10px 0px rgb(23, 20, 21);
+  border-radius: 0.3rem;
+}
+@media screen and (max-width: 767px) {
+  .servicesV2 .tabs-container .pcss3t > ul > li .text_wrapper img {
+    float: none;
+  }
+}
+.servicesV2 .tabs-container .pcss3t > ul > li .text_wrapper p {
+  text-align: justify;
+  width: 100%;
+  overflow-x: visible;
+  font-weight: 600;
+}
+.servicesV2 .tabs-container .pcss3t > ul > li .text_wrapper ul {
+  margin-top: 1rem;
+}
+.servicesV2 .tabs-container .pcss3t > ul > li .text_wrapper ul li::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-image: url(/assets/img/gear-solidwhite.svg);
+  padding: 0.5rem;
+  margin-right: 0.4rem;
 }
 .servicesV2 .tabs-container .pcss3t > .tab-content-first:checked ~ ul .tab-content-first,
 .servicesV2 .tabs-container .pcss3t > .tab-content-2:checked ~ ul .tab-content-2,
@@ -534,7 +569,7 @@ header .section1 .main-button:hover:after {
   -webkit-transform: rotate(0deg);
 }
 .servicesV2 .tabs-container .pcss3t-effect-scale > ul > li {
-  transform: scale(0.1, 0.1);
+  transform: translateX(-50%);
 }
 @media screen and (max-width: 767px) {
   .servicesV2 .tabs-container .pcss3t > label {
@@ -558,6 +593,7 @@ header .section1 .main-button:hover:after {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  transition: 250ms;
 }
 .servicesV2 .tabs-container .pcss3t > label:hover {
   background: #000000;
@@ -607,7 +643,7 @@ header .section1 .main-button:hover:after {
 }
 .servicesV2 .tabs-container .pcss3t > ul,
 .servicesV2 .tabs-container .pcss3t > ul > li {
-  height: 25rem;
+  height: 28rem;
 }
 
 .appointment {
@@ -621,6 +657,7 @@ header .section1 .main-button:hover:after {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 50rem;
   gap: 3rem;
   min-height: 20rem;
 }

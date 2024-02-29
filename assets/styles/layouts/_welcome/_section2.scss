@@ -1,103 +1,3 @@
-// .services {
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   height: auto;
-//   min-height: 25rem;
-//   width: 100%;
-//   background: $black2;
-//   align-items: center;
-//   justify-items: center;
-//   padding: 3rem 2rem;
-
-//   @media only screen and (max-width: 1010px) {
-//     display: flex;
-//     flex-direction: column;
-//   }
-//   @media only screen and (max-width: 600px) {
-//     padding: 0 1rem;
-//   }
-
-//   .container {
-//    display: flex;
-//    flex-direction: column;
-//     justify-items: center;
-//     align-items: center;
-//     background: $redTheme;
-//     width: auto;
-//     max-width: 90%;
-//     height: auto;
-//     margin: 1rem 0;
-//     max-height: 20rem;
-//     border-radius: .5rem;
-
-//     @media only screen and (max-width: 1010px) {
-//       display: grid;
-//       grid-template-rows: 1fr;
-//       max-height: 15rem;
-//       grid-template-columns: 40% 60%;
-//       justify-items: center;
-//     }
-//     @media only screen and (max-width: 796px) {
-//       display: flex;
-//       flex-direction: column;
-//       margin: 1rem 0;
-//       max-height: 20rem;
-//     }
-
-//     .service-center {
-//       width: 100%;
-//       height: 100%;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       text-align: center;
-//       overflow: hidden;
-
-//       .service1 {
-//         font-size: 1.5rem;
-//         overflow: hidden;
-//         letter-spacing: 1px;
-//         font-weight: 600;
-//         padding: .6rem;
-
-//         @media only screen and (max-width: 1880px) {
-//           font-size: 1.5rem;
-//           max-width: 20ch;
-//         }
-//         @media only screen and (max-width: 1400px) {
-//           font-size: 1.4rem;
-//         }
-//         @media only screen and (max-width: 1010px) {
-//           font-size: 1.5rem;
-//         }
-//         @media only screen and (max-width: 796px) {
-//           max-width: 100%;
-//         }
-//         @media only screen and (max-width: 367px) {
-//          font-size: 1.2rem;
-//         }
-//       }
-//     }
-
-//     .img1,
-//     .img2,
-//     .img3 {
-//       height: 20rem;
-//       width:30rem;
-//       max-height: 15rem;
-//     }
-//     .img1 {
-//       background: url(/assets/img/brake-Z3.webp) center/cover;
-//     }
-//     .img2 {
-//       background: url(/assets/img/entretien-exemple.jpeg) center/cover;
-//     }
-//     .img3 {
-//       background: url(/assets/img/tire1.webp) center/cover;
-//     }
-//   }
-// }
-
 .servicesV2 {
   margin: 2rem 2rem 0;
   overflow: hidden;
@@ -115,7 +15,6 @@
     .pcss3t {
       margin: 0 auto;
       width: 100%;
-
     }
     .pcss3t > input {
       display: none;
@@ -124,10 +23,11 @@
       position: relative;
       display: inline-block;
       margin: 0;
+      top: 0.7rem;
       padding: 0;
-      border: 0;
-      outline: none;
+      background: $black2;
       cursor: pointer;
+      box-shadow: 0px 0px 4px 0px $black1;
       transition: all 0.1s;
       -o-transition: all 0.1s;
       -ms-transition: all 0.1s;
@@ -150,11 +50,11 @@
       font-size: 1.1rem;
     }
     .pcss3t > ul > li {
-      display: flex;
       position: absolute;
       width: 100%;
       overflow: auto;
       padding: 30px 40px 0;
+      margin: auto;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
       opacity: 0;
@@ -163,6 +63,44 @@
       -ms-transition: all 0.5s ease-in-out;
       -moz-transition: all 0.5s ease-in-out;
       -webkit-transition: all 0.5s ease-in-out;
+      .text_wrapper {
+        display: block;
+
+        img {
+          float: right;
+          height: auto;
+          width: 60%;
+          margin: 0 0 1rem 1rem;
+          box-shadow: 0px 0px 10px 0px $black1;
+          border-radius: 0.3rem;
+          @media screen and (max-width: 767px) {
+            float: none;
+          }
+        }
+        p {
+          text-align: justify;
+          width: 100%;
+          overflow-x: visible;
+          font-weight: 600;
+        }
+        ul {
+          margin-top: 1rem;
+          // background: $black2;
+          // border-radius: 1rem;
+
+          li {
+            &::before {
+              content: "";
+              display: inline-block;
+              height: 1rem;
+              width: 1rem;
+              background-image: url(/assets/img/gear-solidwhite.svg);
+              padding: 0.5rem;
+              margin-right: 0.4rem;
+            }
+          }
+        }
+      }
     }
     .pcss3t > .tab-content-first:checked ~ ul .tab-content-first,
     .pcss3t > .tab-content-2:checked ~ ul .tab-content-2,
@@ -182,16 +120,13 @@
       -webkit-transform: rotate(0deg);
     }
 
-
-
     /**/
     /* animation effects */
     /**/
     .pcss3t-effect-scale > ul > li {
-      transform: scale(0.1, 0.1);
-      // -webkit-transform: scale(0.1,0.1);
+      // transform: scale(0.1, 0.1);
+      transform: translateX(-50%);
     }
-
 
     /**/
     /* pad */
@@ -211,10 +146,8 @@
       }
     }
 
-    // TODO responsive sur les tabs pour que ca reste comme sur laptop
     .pcss3t > label {
       padding: 0 3rem;
-      // background: #e5e5e5;
       font-size: 1.5rem;
       font-weight: 600;
       line-height: 49px;
@@ -225,6 +158,7 @@
       border-top-left-radius: 3.75rem;
       border-bottom-right-radius: 3.75rem;
       user-select: none;
+      transition: 250ms;
     }
     .pcss3t > label:hover {
       background: #000000;
@@ -259,9 +193,6 @@
       border-top-right-radius: 0;
       border-bottom-left-radius: 0;
       // border-bottom-right-radius: 0;
-
-      // color: #1762ac;
-      // opacity: 1;
     }
     .pcss3t-theme-1 > ul {
       border-radius: 5px;
@@ -290,8 +221,7 @@
     /**/
     .pcss3t > ul,
     .pcss3t > ul > li {
-      height: 25rem;
-
+      height: 28rem;
     }
   }
 }
