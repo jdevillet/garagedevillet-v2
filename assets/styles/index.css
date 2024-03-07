@@ -454,9 +454,6 @@ header .section1 .main-button:hover:after {
   /* animation effects */
   /**/
   /**/
-  /* pad */
-  /**/
-  /**/
   /* phone */
   /**/
   /**/
@@ -465,6 +462,11 @@ header .section1 .main-button:hover:after {
   /**/
   /* height */
   /**/
+}
+@media screen and (max-width: 767px) {
+  .servicesV2 .tabs-container {
+    padding: 0 0.6rem 1rem;
+  }
 }
 .servicesV2 .tabs-container .pcss3t {
   margin: 0 auto;
@@ -517,6 +519,11 @@ header .section1 .main-button:hover:after {
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
+@media screen and (max-width: 767px) {
+  .servicesV2 .tabs-container .pcss3t > ul > li {
+    padding: 0.4rem 0.4rem;
+  }
+}
 .servicesV2 .tabs-container .pcss3t > ul > li .text_wrapper {
   display: block;
 }
@@ -531,6 +538,9 @@ header .section1 .main-button:hover:after {
 @media screen and (max-width: 767px) {
   .servicesV2 .tabs-container .pcss3t > ul > li .text_wrapper img {
     float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 .servicesV2 .tabs-container .pcss3t > ul > li .text_wrapper p {
@@ -643,7 +653,7 @@ header .section1 .main-button:hover:after {
 }
 .servicesV2 .tabs-container .pcss3t > ul,
 .servicesV2 .tabs-container .pcss3t > ul > li {
-  height: 28rem;
+  height: 30rem;
 }
 
 .appointment {
